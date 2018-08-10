@@ -17,6 +17,12 @@ Route::get('/', function () {
 //=====================================姜隆==========================================
 
 
+//后台首页
+Route::get('/admin/index','Admin\IndexController@index');
+//后台用户路由
+Route::resource('/admin/user','Admin\UserController');
+
+
 
 
 
@@ -49,7 +55,11 @@ Route::get('/', function () {
 
 //===================================荀正飞========================================
 
+//轮播图路由
+Route::resource('/admin/slid','Admin\SlidController');
 
+//类别路由
+Route::resource('/admin/cate','Admin\CateController');
 
 
 
