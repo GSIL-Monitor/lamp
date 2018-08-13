@@ -255,7 +255,8 @@
                     <li>
                         <a href="#"><i class="icon-list"></i>友情链接</a>
                         <ul>
-                            <li><a href="form_layouts.html">链接列表</a></li>
+                            <li><a href="/admin/link">链接列表</a></li>
+                            <li><a href="/admin/link/create">添加链接</a></li>
                         </ul>
                     </li>    
                 </ul>

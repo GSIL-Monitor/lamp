@@ -15,12 +15,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 //=====================================姜隆==========================================
+
+
+
 //后台首页
 Route::get('/admin/index','Admin\IndexController@index');
 //后台用户路由
 Route::resource('/admin/user','Admin\UserController');
 //后台登录
 Route::controller('/admin','Admin\LoginController');
+
 
 
 
@@ -93,7 +97,8 @@ Route::controller('/admin','Admin\LoginController');
 
 
 //====================================马飞彪=======================================
-
+Route::get('/admin/link/{id}/eav','Admin\LinkController@eav');	//审核添加的友情链接状态
+Route::resource('/admin/link','Admin\LinkController');			//友情链接
 
 
 
