@@ -47,6 +47,8 @@ class SlidController extends Controller
      */
     public function store(Request $request)
     {
+
+
         //检测文件是否存在
         if($request->hasfile('profile')){
             //创建文件上传对象
@@ -124,5 +126,34 @@ class SlidController extends Controller
         $slids -> forceDelete();
         //返回模版
         return back()->with('删除成功');
+    }
+
+    /**
+     * up the specified resource in storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function up($id)
+    {
+        
+        $slid = Slid::find($id);
+        $slid-> status = 2;
+        $res = $slid -> save();
+        return redirect('/admin/slid');
+    }
+     /**
+     * down the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function down($id)
+    {
+        $slid = Slid::find($id);
+        $slid-> status = 1;
+        $res = $slid -> save();
+        return redirect('/admin/slid');
+        
     }
 }

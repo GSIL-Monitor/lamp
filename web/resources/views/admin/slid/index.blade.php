@@ -38,9 +38,9 @@
             <td >{{ $v -> profile }}</td>
             <td>
                 @if ( $v -> status == 1 )
-                  <a href="#" class="btn btn-success">显示</a>
+                  <a href="/admin/slid/{{ $v->id }}/up" class="btn btn-success">显示</a>
                 @elseif ( $v -> status == 2 )
-                  <a href="#" class="btn btn-info">隐藏</a>
+                  <a href="/admin/slid/{{ $v->id }}/down" class="btn btn-info">隐藏</a>
                 @endif
                 <form action="/admin/slid/{{ $v->id }}" method="post" style="display: inline;">
                   {{ csrf_field() }}

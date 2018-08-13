@@ -54,12 +54,14 @@ Route::resource('/admin/user','Admin\UserController');
 
 
 //===================================荀正飞========================================
-
+//轮播图状态管理路由
+Route::get('admin/slid/{id}/up','Admin\SlidController@up');
+Route::get('admin/slid/{id}/down','Admin\SlidController@down');
 //轮播图路由
 Route::resource('/admin/slid','Admin\SlidController');
 
-//类别路由
-Route::resource('/admin/cate','Admin\CateController');
+
+
 
 
 

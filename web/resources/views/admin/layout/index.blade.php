@@ -33,6 +33,16 @@
 <link rel="stylesheet" type="text/css" href="/admin/css/mws-theme.css" media="screen">
 <link rel="stylesheet" type="text/css" href="/admin/css/themer.css" media="screen">
 
+<!-- 图片上传 -->
+<link rel="stylesheet" type="text/css" href="/admin2/css/webuploader.css" />
+<link rel="stylesheet" type="text/css" href="/admin2/css/style.css" />
+<script src="/admin2/js/jquery-1.9.min.js"></script>
+<script src="/admin2/js/webuploader.js"></script>
+<script src="/admin2/js/jquery.sortable.js"></script>
+<script src="/admin2/js/upload.js"></script>
+
+
+
 <title>MWS Admin - Dashboard</title>
 
 </head>
