@@ -245,9 +245,10 @@
                 </ul>
                 <ul>     
                     <li>
-                        <a href="#"><i class="icon-list"></i>轮播图</a>
+                        <a href="#"><i class="icon-list"></i>图片轮播管理</a>
                         <ul>
-                            <li><a href="form_layouts.html">轮播图列表</a></li>
+                            <li><a href="/admin/slid">图片列表</a></li>
+                            <li><a href="/admin/slid/create">添加图片</a></li>
                         </ul>
                     </li>    
                 </ul>

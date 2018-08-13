@@ -22,8 +22,7 @@ Route::get('/', function () {
 Route::get('/admin/index','Admin\IndexController@index');
 //后台用户路由
 Route::resource('/admin/user','Admin\UserController');
-//后台登录
-Route::controller('/admin','Admin\LoginController');
+
 
 
 
@@ -59,7 +58,11 @@ Route::controller('/admin','Admin\LoginController');
 //===================================荀正飞========================================
 
 
-
+//轮播图状态管理路由
+Route::get('admin/slid/{id}/up','Admin\SlidController@up');
+Route::get('admin/slid/{id}/down','Admin\SlidController@down');
+//轮播图路由
+Route::resource('/admin/slid','Admin\SlidController');
 
 
 
@@ -151,3 +154,22 @@ Route::resource('/admin/link','Admin\LinkController');			//友情链接
 
 //======================================王伟=======================================
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//后台登录
+Route::controller('/admin','Admin\LoginController');
