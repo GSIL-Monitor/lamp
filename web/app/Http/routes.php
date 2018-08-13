@@ -97,7 +97,7 @@ Route::resource('/admin/user','Admin\UserController');
 //====================================马飞彪=======================================
 Route::get('/admin/link/{id}/eav','Admin\LinkController@eav');	//审核添加的友情链接状态
 Route::resource('/admin/link','Admin\LinkController');			//友情链接
-
+Route::resource('/home/index','Home\IndexController');
 
 
 
