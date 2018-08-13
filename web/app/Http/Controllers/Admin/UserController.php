@@ -7,7 +7,8 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Models\Admin_user;
-use Hash;
+use App\Http\Requests\UserStoreRequest;
+use App\Http\Requests\EditStoreRequest;
 class UserController extends Controller
 {
     /**
@@ -15,9 +16,13 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        return view('admin.user.index');
+        //获取数据
+        $search = $request -> input('search','');//搜索关键词
+        $count = $request -> input('count',5);//每页显示条数
+        $data = Admin_user::where('nickname','like','%'.$search.'%') -> paginate($count);
+        return view('admin.user.index',['data'=>$data,'request'=>$request->all()]);
     }
 
     /**
@@ -36,30 +41,12 @@ class UserController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(UserStoreRequest $request)
     {
-        $this->validate($request, [
-            'nickname' => 'required|unique:admin_users|regex:/^[a-zA-Z]{1}[\w]{5,17}$/',
-            'tel' => 'required|regex:/^1[3,4,5,6,7,8,9]{1}[\d]{9}$/',
-            'password' => 'required|regex:/^[\w]{5,17}$/',
-            'repassword' => 'required|same:password',
-            'power' => 'required',
-        ],[
-            'nickname.required'=>'用户名必填',
-            'nickname.regex'=>'用户名格式不正确',
-            'nickname.unique'=>'用户名已存在',
-            'tel.required'=>'手机号必填',
-            'tel.regex'=>'手机号格式不正确',
-            'password.required'=>'密码必填',
-            'password.regex'=>'密码格式不正确',
-            'repassword.required'=>'确认密码必填',
-            'repassword.same'=>'两次密码输入不一致',
-            'power.required'=>'权限必须选择',
-        ]);
-
+        
         $users = new Admin_user;
         $users -> nickname = $request -> input('nickname');
-        $users -> password = Hash::make($request -> input('password'));
+        $users -> password = md5($request -> input('password'));
         $users -> tel = $request -> input('tel');
         $users -> power = $request -> input('power');
         $res = $users -> save();
@@ -89,7 +76,9 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+        //获取数据
+        $data = Admin_user::find($id);
+        return view('admin.user.edit',['data'=>$data]);
     }
 
     /**
@@ -99,9 +88,18 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(EditStoreRequest $request, $id)
     {
-        //
+         $users = Admin_user::find($id);
+        $users -> nickname = $request -> input('nickname');
+        $users -> tel = $request -> input('tel');
+        $users -> power = $request -> input('power');
+        $res = $users -> save();
+        if($res){
+            return redirect('admin/user')->with('success','修改成功');
+        }else{
+            return back()->with('error','修改失败');
+        }
     }
 
     /**
@@ -112,6 +110,12 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        //删除用户
+        $res = Admin_user::destroy($id);
+        if($res){
+            return redirect('admin/user')->with('success','删除成功');
+        }else{
+            return back()->with('error','删除失败');
+        }
     }
 }
