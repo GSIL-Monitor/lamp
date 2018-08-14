@@ -45,7 +45,7 @@
         overflow: hidden;
         margin: -35px 0 0;
         display: block;
-        background: url(images/ad_ctr.png) no-repeat;
+        background: url(/home/images/ad_ctr.png) no-repeat;
         position: absolute;
         top: 50%;
         z-index: 10;
@@ -96,7 +96,7 @@
       }
 
       .flex-control-paging li a {
-        background: url(images/dot.png) no-repeat 0 -16px;
+        background: url(/home/images/dot.png) no-repeat 0 -16px;
         display: block;
         height: 16px;
         overflow: hidden;
@@ -120,24 +120,25 @@
 
   </head>
 
-  <body style="background: #fff;">
+ <body style="background: #fff;">
    <!--top-->
     <div class="top">
       <div class="container">
         <div class="topleft">
-          欢迎进入辣郊游旅游网&nbsp;&nbsp;&nbsp;&nbsp; 目的地城市：
-          <a href="#">云南</a>
+          欢迎进入第七城市
         </div>
         <div class="topcen">
           <form>
-            <p><input type="text" value="查询订单" /><button>查询</button></p>
+            <p><input type="text" value="搜索游记" /><button>查询</button></p>
             <p><input type="text" value="线路查询" /><button>查询</button></p>
           </form>
         </div>
         <div class="topright">
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
           <a href="login.html">登陆</a>|
-          <a href="register.html">立即注册</a>I
-          <a href="member.html">会员中心</a>
+          <a href="register.html">立即注册</a>
         </div>
       </div>
     </div>
@@ -146,7 +147,7 @@
     <div class="header">
       <div class="container2">
         <div class="logo">
-          <a href="index.html"><img src="img/logo.png" /></a>
+          <a href="index.html"><img style="height: 50px;width: 220px" src="img/logo1.png" /></a>
         </div>
         <div class="nav">
           <ul>
@@ -154,16 +155,17 @@
               <a href="index.html">首页</a>
             </li>
             <li>
-              <a href="line.html">辣郊专线</a>
+              <a href="line.html">各地美食</a>
             </li>
             <li>
-              <a href="piece.html">VIP拼团</a>
+              <a href="piece.html">热门景点</a>
             </li>
             <li class="navsub">
-              <a class="navsub_bg" href="made.html">包团定制</a>
+              <a class="navsub_bg" href="made.html">出行锦囊</a>
               <div class="navsub_box">
-                <a href="made.html">企业定制</a>
-                <a href="made.html">家庭定制</a>
+                <a href="made.html">娱乐推荐</a>
+                <a href="made.html">精品路线</a>
+                <a href="made.html">精品酒店</a>
               </div>
               <script type="text/javascript">
                 $(function() {
@@ -181,12 +183,13 @@
               </script>
             </li>
 
+
             <li class="navsub2">
-              <a class="navsub_bg2" href="raiders.html">云南攻略</a>
+              <a class="navsub_bg2" href="raiders.html">第七社区</a>
               <div class="navsub_box2">
-                <a href="scenic.html">景区景点</a>
-                <a href="hotel.html">精品住宿</a>
-                <a href="foods.html">特色美食</a>
+                <a href="scenic.html">旅行论坛</a>
+                <a href="hotel.html">旅行问答</a>
+                <a href="foods.html">结伴同行</a>
                 <a href="travels.html">走心游记</a>
               </div>
               <script type="text/javascript">
@@ -209,9 +212,7 @@
             </li>
           </ul>
         </div>
-        <div class="tel">
-          <img src="img/tel.png" />
-        </div>
+        
       </div>
     </div>
     <!--header end-->

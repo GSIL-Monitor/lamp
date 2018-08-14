@@ -9,10 +9,11 @@
         @foreach($slid as $k=>$v)
         <li>
           <a title="" target="_blank" href="#">
-            <img width="1920" height="482" alt="" style="background: url({{ $v -> profile }}) no-repeat center;" src="images/banner1.jpg">
+            <img width="1920" height="482" alt="" style="background: url({{ $v -> profile }}) no-repeat center;" src="images/alpha.png">
           </a>
         </li>
          @endforeach
+
        
         
       </ul>
@@ -21,9 +22,9 @@
         <li><a class="flex-next" href="javascript:;">Next</a></li>
       </ul>
       <ol id="bannerCtrl" class="flex-control-nav flex-control-paging">
-        <li><a>1</a></li>
-        <li><a>2</a></li>
-        <li><a>2</a></li>
+         @foreach($slid as $k=>$v)
+        <li><a>{{ $v -> status }}</a></li>
+          @endforeach
       </ol>
       </div>
      
