@@ -5,7 +5,8 @@
     <meta http-equiv="Content-Type" content="text/html; chaRset=utf-8" />
     <title>辣郊游旅游网-首页</title>
     <!--jquery-->
-    <script src="/home/js/jquery-1.10.1.min.js"></script>
+    <script src="/home/js/jquery-1.10.2.min.js"></script>
+    <!-- <script src="/home/js/jquery-1.6.4.min.js"></script> -->
     <!--swiper-->
     <link rel="stylesheet" href="/home/css/idangerous.swiper.css">
     <script src="/home/js/idangerous.swiper.min.js"></script>
@@ -21,39 +22,100 @@
     <script type="text/javascript" src="/home/js/function.js"></script>
     
     <!-- 轮播图 -->
-    <link rel="stylesheet" type="text/css" href="/home/css/style1.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="/home/css/nivo-slider.css" media="screen">
-    <script type="text/javascript" src="/home/js/jquery-1.6.4.min.js"></script>
-    <script type="text/javascript" src="/home/js/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="/home/js/jquery.nivo.slider.pack.js"></script>
-    <script type="text/javascript">
-    //Slider
-    jQuery(window).load(function() {
-      jQuery('#slider').nivoSlider({
-      effect: 'fold',
-      slices:15,
-      animSpeed:500, //Slide transition speed
-      pauseTime:5000,
-      controlNav: false,
-      directionNavHide: false,
-      prevText: 'prev',
-      nextText: 'next',
-      startSlide:0, //Set starting Slide (0 index)
-      directionNav:true, //Next &amp; Prev
-      afterLoad: function(){
-        jQuery(".nivo-caption").animate({top:"60"}, {easing:"easeOutBack", duration: 500})
-        },
-        beforeChange: function(){
-        jQuery(".nivo-caption").animate({top:"-300"}, {easing:"easeInBack", duration: 500})
-        },
-        afterChange: function(){
-        jQuery(".nivo-caption").animate({top:"60"}, {easing:"easeOutBack", duration: 500})
-        }
-      });
-      
-    });
+    <script src="/home/js/slider.js"></script>
+    <style>
+      .flexslider {
+        margin: 0px auto 20px;
+        position: relative;
+        width: 100%;
+        height: 482px;
+        overflow: hidden;
+        zoom: 1;
+      }
 
-    </script>
+      .flexslider .slides li {
+        width: 100%;
+        height: 100%;
+      }
+
+      .flex-direction-nav a {
+        width: 70px;
+        height: 70px;
+        line-height: 99em;
+        overflow: hidden;
+        margin: -35px 0 0;
+        display: block;
+        background: url(images/ad_ctr.png) no-repeat;
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+        cursor: pointer;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        -webkit-transition: all .3s ease;
+        border-radius: 35px;
+      }
+
+      .flex-direction-nav .flex-next {
+        background-position: 0 -70px;
+        right: 0;
+      }
+
+      .flex-direction-nav .flex-prev {
+        left: 0;
+      }
+
+      .flexslider:hover .flex-next {
+        opacity: 0.8;
+        filter: alpha(opacity=25);
+      }
+
+      .flexslider:hover .flex-prev {
+        opacity: 0.8;
+        filter: alpha(opacity=25);
+      }
+
+      .flexslider:hover .flex-next:hover,
+      .flexslider:hover .flex-prev:hover {
+        opacity: 1;
+        filter: alpha(opacity=50);
+      }
+
+      .flex-control-nav {
+        width: 100%;
+        position: absolute;
+        bottom: 10px;
+        text-align: center;
+      }
+
+      .flex-control-nav li {
+        margin: 0 2px;
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+      }
+
+      .flex-control-paging li a {
+        background: url(images/dot.png) no-repeat 0 -16px;
+        display: block;
+        height: 16px;
+        overflow: hidden;
+        text-indent: -99em;
+        width: 16px;
+        cursor: pointer;
+      }
+
+      .flex-control-paging li a.flex-active,
+      .flex-control-paging li.active a {
+        background-position: 0 0;
+      }
+
+      .flexslider .slides a img {
+        width: 100%;
+        height: 482px;
+        display: block;
+      }
+    </style>
     <!-- 轮播图结束 -->
 
   </head>

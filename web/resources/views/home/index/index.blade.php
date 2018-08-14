@@ -3,51 +3,56 @@
 <!-- 在占位符中填充内容 -->
 @section('container')
 
- <!--轮播图-->
-  <div id="slider-container">
-  <div id="slider" class="nivoSlider">
+  <!--轮播图-->
+    <div id="banner_tabs" class="flexslider">
+      <ul class="slides">
+        @foreach($slid as $k=>$v)
+        <li>
+          <a title="" target="_blank" href="#">
+            <img width="1920" height="482" alt="" style="background: url({{ $v -> profile }}) no-repeat center;" src="images/banner1.jpg">
+          </a>
+        </li>
+         @endforeach
+       
+        
+      </ul>
+      <ul class="flex-direction-nav">
+        <li><a class="flex-prev" href="javascript:;">Previous</a></li>
+        <li><a class="flex-next" href="javascript:;">Next</a></li>
+      </ul>
+      <ol id="bannerCtrl" class="flex-control-nav flex-control-paging">
+        <li><a>1</a></li>
+        <li><a>2</a></li>
+        <li><a>2</a></li>
+      </ol>
+      </div>
+     
+      <script src="/home/js/slider.js"></script>
+      <script type="text/javascript">
+      $(function() {
+        var bannerSlider = new Slider($('#banner_tabs'), {
+          time: 5000,
+          delay: 400,
+          event: 'hover',
+          auto: true,
+          mode: 'fade',
+          controller: $('#bannerCtrl'),
+          activeControllerCls: 'active'
+        });
+        $('#banner_tabs .flex-prev').click(function() {
+          bannerSlider.prev()
+        });
+        $('#banner_tabs .flex-next').click(function() {
+          bannerSlider.next()
+        });
+      })
+      </script>
 
-    @foreach ($slid as $k=>$v)
-    <img title="#htmlcaption1" alt="" src="{{ $v -> profile }}">
-    @endforeach
-    <!-- <img title="#htmlcaption1" alt="" src="home/images/slider1.jpg">
-    <img title="#htmlcaption2" alt="" src="home/images/slider2.jpg">
-    <img title="#htmlcaption3" alt="" src="home/images/slider3.jpg">
-    <img title="#htmlcaption4" alt="" src="home/images/slider4.jpg">
-    <img title="#htmlcaption4" alt="" src="home/images/slider5.jpg"> -->
-  </div><!-- #slider -->
-  
-  <div id="htmlcaption1" class="nivo-html-caption">
-    <span class="sdate">December 01, 2011</span>
-    <h1>Let´s create your company growth faster...</h1>
-    <hr>
-    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In sapien lorem, placerat ac imperdiet a, volutpat et risus. </p>
-  </div>
-  
-  <div id="htmlcaption2" class="nivo-html-caption">
-    <span class="sdate">December 05, 2011</span>
-    <h1>We can help to solve your company problem...</h1>
-    <hr>
-    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In sapien lorem, placerat ac imperdiet a, volutpat et risus. </p>
-  </div>
-  
-  <div id="htmlcaption3" class="nivo-html-caption">
-    <span class="sdate">December 07, 2011</span>
-    <h1>We always smile to help you...</h1>
-    <hr>
-    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In sapien lorem, placerat ac imperdiet a, volutpat et risus. </p>
-  </div>
-  
-  <div id="htmlcaption4" class="nivo-html-caption">
-    <span class="sdate">December 07, 2011</span>
-    <h1>Discover the places you´ve never been before...</h1>
-    <hr>
-    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In sapien lorem, placerat ac imperdiet a, volutpat et risus. </p>
-  </div>
-  
-</div>
-<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
-    <!--轮播图 end-->
+      <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+    </div>
+  <!--轮播图 end-->
+
+
 
 
 
