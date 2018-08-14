@@ -2,6 +2,55 @@
 
 <!-- 在占位符中填充内容 -->
 @section('container')
+
+ <!--轮播图-->
+  <div id="slider-container">
+  <div id="slider" class="nivoSlider">
+
+    @foreach ($slid as $k=>$v)
+    <img title="#htmlcaption1" alt="" src="{{ $v -> profile }}">
+    @endforeach
+    <!-- <img title="#htmlcaption1" alt="" src="home/images/slider1.jpg">
+    <img title="#htmlcaption2" alt="" src="home/images/slider2.jpg">
+    <img title="#htmlcaption3" alt="" src="home/images/slider3.jpg">
+    <img title="#htmlcaption4" alt="" src="home/images/slider4.jpg">
+    <img title="#htmlcaption4" alt="" src="home/images/slider5.jpg"> -->
+  </div><!-- #slider -->
+  
+  <div id="htmlcaption1" class="nivo-html-caption">
+    <span class="sdate">December 01, 2011</span>
+    <h1>Let´s create your company growth faster...</h1>
+    <hr>
+    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In sapien lorem, placerat ac imperdiet a, volutpat et risus. </p>
+  </div>
+  
+  <div id="htmlcaption2" class="nivo-html-caption">
+    <span class="sdate">December 05, 2011</span>
+    <h1>We can help to solve your company problem...</h1>
+    <hr>
+    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In sapien lorem, placerat ac imperdiet a, volutpat et risus. </p>
+  </div>
+  
+  <div id="htmlcaption3" class="nivo-html-caption">
+    <span class="sdate">December 07, 2011</span>
+    <h1>We always smile to help you...</h1>
+    <hr>
+    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In sapien lorem, placerat ac imperdiet a, volutpat et risus. </p>
+  </div>
+  
+  <div id="htmlcaption4" class="nivo-html-caption">
+    <span class="sdate">December 07, 2011</span>
+    <h1>Discover the places you´ve never been before...</h1>
+    <hr>
+    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In sapien lorem, placerat ac imperdiet a, volutpat et risus. </p>
+  </div>
+  
+</div>
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+    <!--轮播图 end-->
+
+
+
     <!--特卖推荐-->
     <div class="tmbg">
       <div class="container">

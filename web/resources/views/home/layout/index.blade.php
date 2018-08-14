@@ -19,6 +19,43 @@
     <script type="text/javascript" src="/home/js/youji.js"></script>
     <!--pahang-->
     <script type="text/javascript" src="/home/js/function.js"></script>
+    
+    <!-- 轮播图 -->
+    <link rel="stylesheet" type="text/css" href="/home/css/style1.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/home/css/nivo-slider.css" media="screen">
+    <script type="text/javascript" src="/home/js/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="/home/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="/home/js/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript">
+    //Slider
+    jQuery(window).load(function() {
+      jQuery('#slider').nivoSlider({
+      effect: 'fold',
+      slices:15,
+      animSpeed:500, //Slide transition speed
+      pauseTime:5000,
+      controlNav: false,
+      directionNavHide: false,
+      prevText: 'prev',
+      nextText: 'next',
+      startSlide:0, //Set starting Slide (0 index)
+      directionNav:true, //Next &amp; Prev
+      afterLoad: function(){
+        jQuery(".nivo-caption").animate({top:"60"}, {easing:"easeOutBack", duration: 500})
+        },
+        beforeChange: function(){
+        jQuery(".nivo-caption").animate({top:"-300"}, {easing:"easeInBack", duration: 500})
+        },
+        afterChange: function(){
+        jQuery(".nivo-caption").animate({top:"60"}, {easing:"easeOutBack", duration: 500})
+        }
+      });
+      
+    });
+
+    </script>
+    <!-- 轮播图结束 -->
+
   </head>
 
   <body style="background: #fff;">
@@ -116,73 +153,8 @@
       </div>
     </div>
     <!--header end-->
-    <!--banner-->
-    <div id="banner">
-      <div class="swiper-container" id="banner_sw">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="bannerbg"></div>
-          </div>
-          <div class="swiper-slide">
-            <div class="bannerbg"></div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="bannavbg"></div>
-        <div class="bannav">
-          <ul>
-            <li>
-              <span><i class="iconfont icon-calendar"></i>行程天数</span>
-              <p>
-                <a href="#">1~3天</a>
-                <a href="#">1~3天</a>
-                <a href="#">1~3天</a>
-              </p>
-            </li>
-            <li>
-              <span><i class="iconfont icon-zhifeiji"></i>辣郊主题</span>
-              <p>
-                <a href="#">亲子游</a>
-                <a href="#">越野游</a>
-                <a href="#">亲子游</a>
-                <a href="#">越野游</a>
-                <a href="#">阳光之旅</a>
-              </p>
 
-            </li>
-            <li style="border-bottom: 0px #999 dashed;">
-              <span><i class="iconfont icon-dangdi"></i>线路区域</span>
-              <p>
-                <a href="#">昆大丽 </a>
-                <a href="#">昆大丽中</a>
-                <a href="#">昆大丽中泸</a>
-                <a href="#">昆大丽版 </a>
-                <a href="#">昆大丽中泸版</a>
-                <a href="#">大丽中</a>
-                <a href="#">大丽泸 </a>
-                <a href="#">大丽版</a>
-                <a href="#">瑞丽腾冲 </a>
-              </p>
-            </li>
-          </ul>
-          <div class="banmade">
-            <a href="#">立即去定制<i class="iconfont icon-more"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <script>
-        var mySwiper = new Swiper('#banner_sw', {
-          autoplay: 3000, //可选选项，自动滑动
-          loop: true, //可选选项，开启循环
-          effect: 'fade',
-        })
-      </script>
-    </div>
-    <!--banner end-->
-
-         <!-- 内容区 -->
+<!-- 内容区 -->
  @section('container')
 
 
