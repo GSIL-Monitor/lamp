@@ -231,7 +231,18 @@
                         <a href="#"><i class="icon-list"></i>管理员</a>
                         <ul>
                             <li><a href="/admin/user">管理员列表</a></li>
+                            <li><a href="/admin/user/index">管理员列表</a></li>
                             <li><a href="/admin/user/create">添加管理员</a></li>
+                        </ul>
+                    </li>    
+                </ul>
+                <ul>     
+                    <li>
+                        <a href="#"><i class="icon-list"></i>分类管理</a>
+                        <ul>
+                            <li><a href="/admin/cates">分类列表</a></li>
+                            <li><a href="/admin/cates/create">添加分类</a></li>
+                            
                         </ul>
                     </li>    
                 </ul>
@@ -271,11 +282,10 @@
                 </ul>
                  <ul>     
                     <li>
-                        <a href="#"><i class="icon-list"></i>网站设置</a>
+                        <a href="#"><i class="icon-tools"></i>网站基础设置</a>
                         <ul>
-                            <li><a href="form_layouts.html">LOGO</a></li>
-                            <li><a href="form_layouts.html">法律申明设置</a></li>
-                            <li><a href="form_layouts.html">版权设置</a></li>
+                            <li><a href="/admin/set/create">添加设置</a></li>
+                            <li><a href="/admin/set/index">浏览设置</a></li>
                         </ul>
                     </li>    
                 </ul>
@@ -309,6 +319,7 @@
                 @endif
 
                 @section('container')
+
 
                 @show
             </div>
