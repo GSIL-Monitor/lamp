@@ -52,7 +52,7 @@
         
         	<!-- Logo Wrapper, images put within this wrapper will always be vertically centered -->
         	<div id="mws-logo-wrap">
-            	<img src="/admin/images/mws-logo.png" alt="mws admin">
+            	<img src="/admin/images/mws-logo4.png" alt="mws admin">
 			</div>
         </div>
         
@@ -231,7 +231,6 @@
                         <a href="#"><i class="icon-list"></i>管理员</a>
                         <ul>
                             <li><a href="/admin/user">管理员列表</a></li>
-                            <li><a href="/admin/user/index">管理员列表</a></li>
                             <li><a href="/admin/user/create">添加管理员</a></li>
                         </ul>
                     </li>    
