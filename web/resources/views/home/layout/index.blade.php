@@ -3,9 +3,10 @@
 
   <head>
     <meta http-equiv="Content-Type" content="text/html; chaRset=utf-8" />
-    <title>第七城市-首页</title>
+    <title>辣郊游旅游网-首页</title>
     <!--jquery-->
-    <script src="/home/js/jquery-1.10.1.min.js"></script>
+    <script src="/home/js/jquery-1.10.2.min.js"></script>
+    <!-- <script src="/home/js/jquery-1.6.4.min.js"></script> -->
     <!--swiper-->
     <link rel="stylesheet" href="/home/css/idangerous.swiper.css">
     <script src="/home/js/idangerous.swiper.min.js"></script>
@@ -15,37 +16,138 @@
     <link rel="stylesheet" href="/home/css/felizon_pc.css" />
     <link rel="stylesheet" href="/home/css/style.css" />
     <link rel="stylesheet" href="/home/css/member.css" />
-    <link rel="stylesheet" type="text/css" href="/home/css/headerfoot_black.min-2b9fe8cff370bc02d93e68713767796c.css">
     <!--youji-->
     <script type="text/javascript" src="/home/js/youji.js"></script>
     <!--pahang-->
     <script type="text/javascript" src="/home/js/function.js"></script>
+    
+    <!-- 轮播图 -->
+    <script src="/home/js/slider.js"></script>
+    <style>
+      .flexslider {
+        margin: 0px auto 20px;
+        position: relative;
+        width: 100%;
+        height: 482px;
+        overflow: hidden;
+        zoom: 1;
+      }
+
+      .flexslider .slides li {
+        width: 100%;
+        height: 100%;
+      }
+
+      .flex-direction-nav a {
+        width: 70px;
+        height: 70px;
+        line-height: 99em;
+        overflow: hidden;
+        margin: -35px 0 0;
+        display: block;
+        background: url(images/ad_ctr.png) no-repeat;
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+        cursor: pointer;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        -webkit-transition: all .3s ease;
+        border-radius: 35px;
+      }
+
+      .flex-direction-nav .flex-next {
+        background-position: 0 -70px;
+        right: 0;
+      }
+
+      .flex-direction-nav .flex-prev {
+        left: 0;
+      }
+
+      .flexslider:hover .flex-next {
+        opacity: 0.8;
+        filter: alpha(opacity=25);
+      }
+
+      .flexslider:hover .flex-prev {
+        opacity: 0.8;
+        filter: alpha(opacity=25);
+      }
+
+      .flexslider:hover .flex-next:hover,
+      .flexslider:hover .flex-prev:hover {
+        opacity: 1;
+        filter: alpha(opacity=50);
+      }
+
+      .flex-control-nav {
+        width: 100%;
+        position: absolute;
+        bottom: 10px;
+        text-align: center;
+      }
+
+      .flex-control-nav li {
+        margin: 0 2px;
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+      }
+
+      .flex-control-paging li a {
+        background: url(images/dot.png) no-repeat 0 -16px;
+        display: block;
+        height: 16px;
+        overflow: hidden;
+        text-indent: -99em;
+        width: 16px;
+        cursor: pointer;
+      }
+
+      .flex-control-paging li a.flex-active,
+      .flex-control-paging li.active a {
+        background-position: 0 0;
+      }
+
+      .flexslider .slides a img {
+        width: 100%;
+        height: 482px;
+        display: block;
+      }
+    </style>
+    <!-- 轮播图结束 -->
 
   </head>
 
-  <body style="background: #fff;">
-
+ <body style="background: #fff;">
    <!--top-->
     <div class="top">
       <div class="container">
         <div class="topleft">
-          欢迎进入第七城市网&nbsp;&nbsp;&nbsp;&nbsp; 目的地城市：
-          <a href="#">云南</a>
+          欢迎进入第七城市
+        </div>
+        <div class="topcen">
+          <form>
+            <p><input type="text" value="搜索游记" /><button>查询</button></p>
+            <p><input type="text" value="线路查询" /><button>查询</button></p>
+          </form>
         </div>
         <div class="topright">
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
           <a href="login.html">登陆</a>|
-          <a href="register.html">立即注册</a>I
-          <a href="member.html">会员中心</a>
+          <a href="register.html">立即注册</a>
         </div>
       </div>
     </div>
     <!--top end-->
-
     <!--header-->
     <div class="header">
       <div class="container2">
         <div class="logo">
-          <!-- <a href="index.html"><img src="img/logo.png" /></a> -->
+          <a href="index.html"><img style="height: 50px;width: 220px" src="img/logo1.png" /></a>
         </div>
         <div class="nav">
           <ul>
@@ -53,16 +155,17 @@
               <a href="index.html">首页</a>
             </li>
             <li>
-              <a href="line.html">辣郊专线</a>
+              <a href="line.html">各地美食</a>
             </li>
             <li>
-              <a href="piece.html">VIP拼团</a>
+              <a href="piece.html">热门景点</a>
             </li>
             <li class="navsub">
-              <a class="navsub_bg" href="made.html">包团定制</a>
+              <a class="navsub_bg" href="made.html">出行锦囊</a>
               <div class="navsub_box">
-                <a href="made.html">企业定制</a>
-                <a href="made.html">家庭定制</a>
+                <a href="made.html">娱乐推荐</a>
+                <a href="made.html">精品路线</a>
+                <a href="made.html">精品酒店</a>
               </div>
               <script type="text/javascript">
                 $(function() {
@@ -80,12 +183,13 @@
               </script>
             </li>
 
+
             <li class="navsub2">
-              <a class="navsub_bg2" href="raiders.html">云南攻略</a>
+              <a class="navsub_bg2" href="raiders.html">第七社区</a>
               <div class="navsub_box2">
-                <a href="scenic.html">景区景点</a>
-                <a href="hotel.html">精品住宿</a>
-                <a href="foods.html">特色美食</a>
+                <a href="scenic.html">旅行论坛</a>
+                <a href="hotel.html">旅行问答</a>
+                <a href="foods.html">结伴同行</a>
                 <a href="travels.html">走心游记</a>
               </div>
               <script type="text/javascript">
@@ -108,125 +212,79 @@
             </li>
           </ul>
         </div>
-       
+        
       </div>
     </div>
     <!--header end-->
 
-    <!--banner-->
-    <div id="banner">
-      <div class="swiper-container" id="banner_sw">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="bannerbg"></div>
-          </div>
-          <div class="swiper-slide">
-            <div class="bannerbg"></div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="bannavbg"></div>
-        <div class="bannav">
-          <ul>
-            <li>
-              <span><i class="iconfont icon-calendar"></i>行程天数</span>
-              <p>
-                <a href="#">1~3天</a>
-                <a href="#">1~3天</a>
-                <a href="#">1~3天</a>
-              </p>
-            </li>
-            <li>
-              <span><i class="iconfont icon-zhifeiji"></i>辣郊主题</span>
-              <p>
-                <a href="#">亲子游</a>
-                <a href="#">越野游</a>
-                <a href="#">亲子游</a>
-                <a href="#">越野游</a>
-                <a href="#">阳光之旅</a>
-              </p>
-
-            </li>
-            <li style="border-bottom: 0px #999 dashed;">
-              <span><i class="iconfont icon-dangdi"></i>线路区域</span>
-              <p>
-                <a href="#">昆大丽 </a>
-                <a href="#">昆大丽中</a>
-                <a href="#">昆大丽中泸</a>
-                <a href="#">昆大丽版 </a>
-                <a href="#">昆大丽中泸版</a>
-                <a href="#">大丽中</a>
-                <a href="#">大丽泸 </a>
-                <a href="#">大丽版</a>
-                <a href="#">瑞丽腾冲 </a>
-              </p>
-            </li>
-          </ul>
-          <div class="banmade">
-            <a href="#">立即去定制<i class="iconfont icon-more"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <script>
-        var mySwiper = new Swiper('#banner_sw', {
-          autoplay: 3000, //可选选项，自动滑动
-          loop: true, //可选选项，开启循环
-          effect: 'fade',
-        })
-      </script>
-    </div>
-    <!--banner end-->
-
-         <!-- 内容区 -->
+<!-- 内容区 -->
  @section('container')
 
 
 
  @show
 <!-- 内容结束 -->
-
                        
 <!-- Footer -->
+   <div id="mws-footer">
+       欢 迎 来 到  第 七 城 市
+    </div>
 <!-- 热门城市推荐 -->
-  <!--footer-->
-    <div class="qyer_footer">
-      <div class="topline"></div>
-      <div class="content">
-        <p class="nav">
-          <a href="//nav.qyer.com/about" target="_blank" rel="nofollow" data-bn-ipg="foot-about-1">第七城市简介</a>
-          <a href="//nav.qyer.com/partner" target="_blank" rel="nofollow" data-bn-ipg="foot-about-3">合作伙伴</a>
-          <a href="//nav.qyer.com/job" target="_blank" rel="nofollow" data-bn-ipg="foot-join-1">加入我们</a>
-          <a href="//nav.qyer.com/tyro" target="_blank" rel="nofollow" data-bn-ipg="foot-help-1">新手上路</a>
-          <a href="//m.qyer.com/guide/page/aEKs7ooblmk/?lk=1" target="_blank" rel="nofollow" data-bn-ipg="foot-help-2">使用帮助</a>
-          <a href="//www.qyer.com/sitemap.html" target="_blank" data-bn-ipg="foot-help-4">网站地图</a>
-          <a href="//nav.qyer.com/member" target="_blank" rel="nofollow" data-bn-ipg="foot-clause-1">会员条款</a>
-          <a href="//nav.qyer.com/bbsguide" target="_blank" rel="nofollow" data-bn-ipg="foot-clause-2">社区指南</a>
-          <a href="//nav.qyer.com/copyright" target="_blank" rel="nofollow" data-bn-ipg="foot-clause-3">版权声明</a>
-          <a href="//nav.qyer.com/exemption" target="_blank" rel="nofollow" data-bn-ipg="foot-clause-4">免责声明</a>
-          <a href="//nav.qyer.com/contact" target="_blank" rel="nofollow" data-bn-ipg="foot-about-2">联系我们</a></p>
-        <p class="info">2004-2018 © 第七城市® qyer.com All rights reserved. Version v5.57 京ICP备12003524号 京公网安备11010102001935号 京ICP证140673号
-          <a target="_blank" style="color:inherit;" href="//static.qyer.com/images/yyzz.jpg">营业执照</a>
-          <a target="_blank" style="color:inherit;" href="//static.qyer.com/images/jyxkz.jpg">经营许可证</a></p>
+ <!--footer-->
+    <div class="footer">
+      <div class="container">
+        <div class="footlvpai">
+          <h1>辣郊游·旅游网</h1>
+          <p>Life is not a solo act. It’s a huge collaboration, and we all need to assemble around us the people<br/> who care about us and support us in times of strife</p>
+        </div>
+        <div class="footer_left">
+          <ul>
+            <li>
+              <h1>关于我们</h1>
+              <a href="# ">品牌介绍</a>
+              <a href="# ">公司简介</a>
+              <a href="# ">服务项目</a>
+              <a href="# ">公司简介</a>
+              <a href="# ">公司简介</a>
+            </li>
+            <li>
+              <h1>旅游城市  </h1>
+              <a href="# ">海南三亚</a>
+              <a href="# ">云南大理</a>
+              <a href="# ">上海</a>
 
-
-        <!--友情链接模块-->
-        <!-- 友情链接 -->
-        <dl class="qyer_footer_links">
-          <dt>友情链接：</dt>
-          @foreach ($link as $k=>$v)
-          <dd>
-            <a target="_blank" href="{{ $v->lurl }}" data-bn-ipg="foot-hand-1">{{ $v->lname }}</a>
-          </dd>
-          @endforeach
-        </dl>
+            </li>
+            <li>
+              <h1>品牌旅游</h1>
+              <a href="# ">专业团队</a>
+              <a href="# ">线路安排</a>
+              <a href="# ">行程明确细致</a>
+              <a href="# ">酒店</a>
+              <a href="# ">公司简介</a>
+            </li>
+            <li>
+              <h1>其他事项</h1>
+              <a href="# ">公司简介</a>
+              <a href="# ">公司简介</a>
+              <a href="# ">公司简介</a>
+              <a href="# ">公司简介</a>
+              <a href="# ">公司简介</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_right">
+          
+        </div>
       </div>
     </div>
-
-  <!--footer end-->
-
-</body>
+    <div class="footer2">
+      <div class="container">
+        <p>Copyright © 2008-2017 辣郊游·旅游网All Rights Reserved 蒙ICP备000000号</p>
+        <p>旅游者消费提示——旅游是一个需要特别审批的行业，无旅游经营许可证者均无资格接待安排旅游者；兴业旅行社年度旅行社责任险保额为1000万元，行业最高，敬请知晓!</p>
+      </div>
+    </div>
+    <!--footer end-->
+  </body>
 
 </html>
 

@@ -3,6 +3,59 @@
 <!-- 在占位符中填充内容 -->
 @section('container')
 
+  <!--轮播图-->
+    <div id="banner_tabs" class="flexslider">
+      <ul class="slides">
+        @foreach($slid as $k=>$v)
+        <li>
+          <a title="" target="_blank" href="#">
+            <img width="1920" height="482" alt="" style="background: url({{ $v -> profile }}) no-repeat center;" src="images/banner1.jpg">
+          </a>
+        </li>
+         @endforeach
+       
+        
+      </ul>
+      <ul class="flex-direction-nav">
+        <li><a class="flex-prev" href="javascript:;">Previous</a></li>
+        <li><a class="flex-next" href="javascript:;">Next</a></li>
+      </ul>
+      <ol id="bannerCtrl" class="flex-control-nav flex-control-paging">
+        <li><a>1</a></li>
+        <li><a>2</a></li>
+        <li><a>2</a></li>
+      </ol>
+      </div>
+     
+      <script src="/home/js/slider.js"></script>
+      <script type="text/javascript">
+      $(function() {
+        var bannerSlider = new Slider($('#banner_tabs'), {
+          time: 5000,
+          delay: 400,
+          event: 'hover',
+          auto: true,
+          mode: 'fade',
+          controller: $('#bannerCtrl'),
+          activeControllerCls: 'active'
+        });
+        $('#banner_tabs .flex-prev').click(function() {
+          bannerSlider.prev()
+        });
+        $('#banner_tabs .flex-next').click(function() {
+          bannerSlider.next()
+        });
+      })
+      </script>
+
+      <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+    </div>
+  <!--轮播图 end-->
+
+
+
+
+
     <!--特卖推荐-->
     <div class="tmbg">
       <div class="container">
@@ -807,13 +860,21 @@
     <div class="ydbg">
       <div class="container">
         <div class="ydtxt">
-          <br><br><br>
-          <h1>让旅行变得如此简单！</h1><br><br><br><br><br>
-          <h1>人生就是一次充满未知的旅行!</h1>
-          
+          <h1>让旅行变得如此简单！</h1>
+          <h2>
+              <span>100%</span>满意&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span>99%</span>好评&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span>78%</span>好评&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span>95%</span>好评
+          </h2>
         </div>
         <div class="mzcxbtn">
-          
+          <form>
+            <input class="input" style="width: 300px;" type="text" name="目的地" placeholder="输入目的地城市" />
+            <input class="input" style="width: 130px;" type="text" name="姓" placeholder="姓名/称呼" />
+            <input class="input" type="text" name="手机号" placeholder="请输入手机号码" />
+            <a href="javascript:void(0);" onClick="winpop();">立即预定</a>
+          </form>
         </div>
       </div>
     </div>
