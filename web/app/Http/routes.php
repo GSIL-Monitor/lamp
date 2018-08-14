@@ -16,8 +16,6 @@ Route::get('/', function () {
 });
 //=====================================姜隆==========================================
 
-
-
 //后台首页
 Route::get('/admin/index','Admin\IndexController@index');
 //后台用户路由
@@ -53,6 +51,14 @@ Route::resource('/admin/set','Admin\SetController');
 
 
 
+
+
+//===================================荀正飞========================================
+//轮播图状态管理路由
+Route::get('admin/slid/{id}/up','Admin\SlidController@up');
+Route::get('admin/slid/{id}/down','Admin\SlidController@down');
+//轮播图路由
+Route::resource('/admin/slid','Admin\SlidController');
 
 
 

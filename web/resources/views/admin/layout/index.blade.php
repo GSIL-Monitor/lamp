@@ -34,6 +34,16 @@
 <link rel="stylesheet" type="text/css" href="/admin/css/themer.css" media="screen">
 <link rel="stylesheet" type="text/css" href="/admin/css/page_page.css">
 
+<!-- 图片上传 -->
+<link rel="stylesheet" type="text/css" href="/admin2/css/webuploader.css" />
+<link rel="stylesheet" type="text/css" href="/admin2/css/style.css" />
+<script src="/admin2/js/jquery-1.9.min.js"></script>
+<script src="/admin2/js/webuploader.js"></script>
+<script src="/admin2/js/jquery.sortable.js"></script>
+<script src="/admin2/js/upload.js"></script>
+
+
+
 <title>MWS Admin - Dashboard</title>
 
 </head>
@@ -276,6 +286,16 @@
                         <a href="#"><i class="icon-list"></i>游记</a>
                         <ul>
                             <li><a href="form_layouts.html">管理游记</a></li>
+                        </ul>
+                    </li>    
+                </ul>
+                <ul>     
+                    <li>
+                        <a href="#"><i class="icon-list"></i>类别管理</a>
+                        <ul>
+                            <li><a href="/admin/cate">分类列表</a></li>
+                            <li><a href="/admin/cate/create">分类添加</a></li> 
+                            <li><a href="/admin/cate/create">回收站</a></li>
                         </ul>
                     </li>    
                 </ul>

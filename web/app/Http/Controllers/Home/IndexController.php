@@ -7,6 +7,9 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use App\Models\Slid;
+
+
 class IndexController extends Controller
 {
     /**
@@ -16,8 +19,13 @@ class IndexController extends Controller
      */
     public function index()
     {
+        //查询友情链接所有状态为2(已审核)的数据
+    
+        //查询撸轮播图所有状态为2(已审核)的数据
+        $slid = Slid::where('status','=',2) -> get();
+        // dd($slid);
         //加载模板
-        return view('home.index.index');
+        return view('home.index.index',['slid' => $slid]);
     }
 
     /**
