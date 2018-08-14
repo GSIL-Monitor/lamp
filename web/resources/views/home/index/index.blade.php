@@ -2,6 +2,7 @@
 
 <!-- 在占位符中填充内容 -->
 @section('container')
+
     <!--特卖推荐-->
     <div class="tmbg">
       <div class="container">
@@ -806,21 +807,13 @@
     <div class="ydbg">
       <div class="container">
         <div class="ydtxt">
-          <h1>让旅行变得如此简单！</h1>
-          <h2>
-              <span>100%</span>满意&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <span>99%</span>好评&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <span>78%</span>好评&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <span>95%</span>好评
-          </h2>
+          <br><br><br>
+          <h1>让旅行变得如此简单！</h1><br><br><br><br><br>
+          <h1>人生就是一次充满未知的旅行!</h1>
+          
         </div>
         <div class="mzcxbtn">
-          <form>
-            <input class="input" style="width: 300px;" type="text" name="目的地" placeholder="输入目的地城市" />
-            <input class="input" style="width: 130px;" type="text" name="姓" placeholder="姓名/称呼" />
-            <input class="input" type="text" name="手机号" placeholder="请输入手机号码" />
-            <a href="javascript:void(0);" onClick="winpop();">立即预定</a>
-          </form>
+          
         </div>
       </div>
     </div>

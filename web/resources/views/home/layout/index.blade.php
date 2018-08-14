@@ -3,7 +3,7 @@
 
   <head>
     <meta http-equiv="Content-Type" content="text/html; chaRset=utf-8" />
-    <title>辣郊游旅游网-首页</title>
+    <title>第七城市-首页</title>
     <!--jquery-->
     <script src="/home/js/jquery-1.10.1.min.js"></script>
     <!--swiper-->
@@ -15,25 +15,22 @@
     <link rel="stylesheet" href="/home/css/felizon_pc.css" />
     <link rel="stylesheet" href="/home/css/style.css" />
     <link rel="stylesheet" href="/home/css/member.css" />
+    <link rel="stylesheet" type="text/css" href="/home/css/headerfoot_black.min-2b9fe8cff370bc02d93e68713767796c.css">
     <!--youji-->
     <script type="text/javascript" src="/home/js/youji.js"></script>
     <!--pahang-->
     <script type="text/javascript" src="/home/js/function.js"></script>
+
   </head>
 
   <body style="background: #fff;">
+
    <!--top-->
     <div class="top">
       <div class="container">
         <div class="topleft">
-          欢迎进入辣郊游旅游网&nbsp;&nbsp;&nbsp;&nbsp; 目的地城市：
+          欢迎进入第七城市网&nbsp;&nbsp;&nbsp;&nbsp; 目的地城市：
           <a href="#">云南</a>
-        </div>
-        <div class="topcen">
-          <form>
-            <p><input type="text" value="查询订单" /><button>查询</button></p>
-            <p><input type="text" value="线路查询" /><button>查询</button></p>
-          </form>
         </div>
         <div class="topright">
           <a href="login.html">登陆</a>|
@@ -43,11 +40,12 @@
       </div>
     </div>
     <!--top end-->
+
     <!--header-->
     <div class="header">
       <div class="container2">
         <div class="logo">
-          <a href="index.html"><img src="img/logo.png" /></a>
+          <!-- <a href="index.html"><img src="img/logo.png" /></a> -->
         </div>
         <div class="nav">
           <ul>
@@ -110,12 +108,11 @@
             </li>
           </ul>
         </div>
-        <div class="tel">
-          <img src="img/tel.png" />
-        </div>
+       
       </div>
     </div>
     <!--header end-->
+
     <!--banner-->
     <div id="banner">
       <div class="swiper-container" id="banner_sw">
@@ -189,67 +186,47 @@
 
  @show
 <!-- 内容结束 -->
+
                        
 <!-- Footer -->
-   <div id="mws-footer">
-       欢 迎 来 到  第 七 城 市
-    </div>
 <!-- 热门城市推荐 -->
- <!--footer-->
-    <div class="footer">
-      <div class="container">
-        <div class="footlvpai">
-          <h1>辣郊游·旅游网</h1>
-          <p>Life is not a solo act. It’s a huge collaboration, and we all need to assemble around us the people<br/> who care about us and support us in times of strife</p>
-        </div>
-        <div class="footer_left">
-          <ul>
-            <li>
-              <h1>关于我们</h1>
-              <a href="# ">品牌介绍</a>
-              <a href="# ">公司简介</a>
-              <a href="# ">服务项目</a>
-              <a href="# ">公司简介</a>
-              <a href="# ">公司简介</a>
-            </li>
-            <li>
-              <h1>旅游城市  </h1>
-              <a href="# ">海南三亚</a>
-              <a href="# ">云南大理</a>
-              <a href="# ">上海</a>
+  <!--footer-->
+    <div class="qyer_footer">
+      <div class="topline"></div>
+      <div class="content">
+        <p class="nav">
+          <a href="//nav.qyer.com/about" target="_blank" rel="nofollow" data-bn-ipg="foot-about-1">第七城市简介</a>
+          <a href="//nav.qyer.com/partner" target="_blank" rel="nofollow" data-bn-ipg="foot-about-3">合作伙伴</a>
+          <a href="//nav.qyer.com/job" target="_blank" rel="nofollow" data-bn-ipg="foot-join-1">加入我们</a>
+          <a href="//nav.qyer.com/tyro" target="_blank" rel="nofollow" data-bn-ipg="foot-help-1">新手上路</a>
+          <a href="//m.qyer.com/guide/page/aEKs7ooblmk/?lk=1" target="_blank" rel="nofollow" data-bn-ipg="foot-help-2">使用帮助</a>
+          <a href="//www.qyer.com/sitemap.html" target="_blank" data-bn-ipg="foot-help-4">网站地图</a>
+          <a href="//nav.qyer.com/member" target="_blank" rel="nofollow" data-bn-ipg="foot-clause-1">会员条款</a>
+          <a href="//nav.qyer.com/bbsguide" target="_blank" rel="nofollow" data-bn-ipg="foot-clause-2">社区指南</a>
+          <a href="//nav.qyer.com/copyright" target="_blank" rel="nofollow" data-bn-ipg="foot-clause-3">版权声明</a>
+          <a href="//nav.qyer.com/exemption" target="_blank" rel="nofollow" data-bn-ipg="foot-clause-4">免责声明</a>
+          <a href="//nav.qyer.com/contact" target="_blank" rel="nofollow" data-bn-ipg="foot-about-2">联系我们</a></p>
+        <p class="info">2004-2018 © 第七城市® qyer.com All rights reserved. Version v5.57 京ICP备12003524号 京公网安备11010102001935号 京ICP证140673号
+          <a target="_blank" style="color:inherit;" href="//static.qyer.com/images/yyzz.jpg">营业执照</a>
+          <a target="_blank" style="color:inherit;" href="//static.qyer.com/images/jyxkz.jpg">经营许可证</a></p>
 
-            </li>
-            <li>
-              <h1>品牌旅游</h1>
-              <a href="# ">专业团队</a>
-              <a href="# ">线路安排</a>
-              <a href="# ">行程明确细致</a>
-              <a href="# ">酒店</a>
-              <a href="# ">公司简介</a>
-            </li>
-            <li>
-              <h1>其他事项</h1>
-              <a href="# ">公司简介</a>
-              <a href="# ">公司简介</a>
-              <a href="# ">公司简介</a>
-              <a href="# ">公司简介</a>
-              <a href="# ">公司简介</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer_right">
-          
-        </div>
+
+        <!--友情链接模块-->
+        <!-- 友情链接 -->
+        <dl class="qyer_footer_links">
+          <dt>友情链接：</dt>
+          @foreach ($link as $k=>$v)
+          <dd>
+            <a target="_blank" href="{{ $v->lurl }}" data-bn-ipg="foot-hand-1">{{ $v->lname }}</a>
+          </dd>
+          @endforeach
+        </dl>
       </div>
     </div>
-    <div class="footer2">
-      <div class="container">
-        <p>Copyright © 2008-2017 辣郊游·旅游网All Rights Reserved 蒙ICP备000000号</p>
-        <p>旅游者消费提示——旅游是一个需要特别审批的行业，无旅游经营许可证者均无资格接待安排旅游者；兴业旅行社年度旅行社责任险保额为1000万元，行业最高，敬请知晓!</p>
-      </div>
-    </div>
-    <!--footer end-->
-  </body>
+
+  <!--footer end-->
+
+</body>
 
 </html>
 

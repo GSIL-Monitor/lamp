@@ -2,17 +2,6 @@
 
 <!-- 在占位符中填充内容 -->
 @section('container')
-@if(session('success'))
-    <div class="mws-form-message success">
-        {{ session('success') }}
-    </div>
-@endif
-
-@if(session('error'))
-    <div class="mws-form-message error">
-          {{ session('error') }}
-    </div>
-@endif
 
 @if (count($errors) > 0)
     <div class="mws-form-message error">

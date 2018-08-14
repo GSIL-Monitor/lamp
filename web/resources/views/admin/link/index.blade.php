@@ -3,19 +3,6 @@
 <!-- 在占位符中填充内容 -->
 @section('container')
 
-@if(session('success'))
-    <div class="mws-form-message success">
-        {{ session('success') }}
-    </div>
-@endif
-
-@if(session('error'))
-    <div class="mws-form-message error">
-          {{ session('error') }}
-    </div>
-@endif
-
-
 <div class="mws-panel grid_8">
     <div class="mws-panel-header">
         <span>
@@ -91,9 +78,9 @@
                         @endforeach
                     </tbody>
                  </table>
-                    <!-- <div id="page_page">
+                    <div id="page_page">
                       {!! $data->appends([$request])->render() !!}
-                     </div> -->
+                     </div>
                 </div>
             </div>
         </div>
