@@ -16,6 +16,7 @@ class SlidController extends Controller
      */
     public function index(Request $request)
     {   
+
         $search = $request -> input('search','');
 
         $data = Slid::where('id','like','%'.$search.'%') -> paginate(5);

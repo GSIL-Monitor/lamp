@@ -32,6 +32,7 @@
 <!-- Theme Stylesheet -->
 <link rel="stylesheet" type="text/css" href="/admin/css/mws-theme.css" media="screen">
 <link rel="stylesheet" type="text/css" href="/admin/css/themer.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/admin/css/page_page.css">
 
 <!-- 图片上传 -->
 <link rel="stylesheet" type="text/css" href="/admin2/css/webuploader.css" />
@@ -198,12 +199,10 @@
                 <!-- Username and Functions -->
                 <div id="mws-user-functions">
                     <div id="mws-username">
-                        Hello, John Doe
+                        Hello, {{ session('key') }}
                     </div>
                     <ul>
-                    	<li><a href="#">个人信息</a></li>
-                        <li><a href="#">修改密码</a></li>
-                        <li><a href="index.html">退出</a></li>
+                        <li><a href="/admin/out">退出</a></li>
                     </ul>
                 </div>
             </div>
@@ -241,7 +240,7 @@
                     <li>
                         <a href="#"><i class="icon-list"></i>管理员</a>
                         <ul>
-                            <li><a href="form_layouts.html">管理员列表</a></li>
+                            <li><a href="/admin/user">管理员列表</a></li>
                             <li><a href="/admin/user/create">添加管理员</a></li>
                         </ul>
                     </li>    
@@ -267,7 +266,8 @@
                     <li>
                         <a href="#"><i class="icon-list"></i>友情链接</a>
                         <ul>
-                            <li><a href="form_layouts.html">链接列表</a></li>
+                            <li><a href="/admin/link">链接列表</a></li>
+                            <li><a href="/admin/link/create">添加链接</a></li>
                         </ul>
                     </li>    
                 </ul>
@@ -315,6 +315,19 @@
         
         	<!-- 内容区 -->
             <div class="container">
+                <!-- 读取跳转信息 -->
+                @if(session('success'))
+                <div class="mws-form-message success">
+                    {{ session('success')}}
+                </div>
+                @endif
+
+                @if(session('error'))
+                <div class="mws-form-message error">
+                    {{ session('error')}}
+                </div>
+                @endif
+
                 @section('container')
 
                 @show

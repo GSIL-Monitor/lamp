@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Home;
 
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class CateController extends Controller
+class IndexController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,7 +16,8 @@ class CateController extends Controller
      */
     public function index()
     {
-        echo '111';
+        //加载模板
+        return view('home.index.index');
     }
 
     /**
@@ -26,7 +27,7 @@ class CateController extends Controller
      */
     public function create()
     {
-        return view('admin.cate.create',['title'=>'分类添加']); 
+        //
     }
 
     /**
@@ -37,12 +38,7 @@ class CateController extends Controller
      */
     public function store(Request $request)
     {
-        $data = $request -> all();
-        // dd($data);
-        $cates = new Cates;
-        $cates -> tname = $request -> input('tname');
-        $cates -> pid = $request -> input('pid');
-        $cates -> pid = $request -> input('pid');
+        //
     }
 
     /**
