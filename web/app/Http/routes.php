@@ -19,6 +19,7 @@ Route::get('/', function () {
 Route::get('/admin/index','Admin\IndexController@index');
 //后台用户路由
 Route::resource('/admin/user','Admin\UserController');
+Route::resource('/admin/set','Admin\SetController');
 
 
 
@@ -144,3 +145,10 @@ Route::resource('/admin/user','Admin\UserController');
 
 //======================================王伟=======================================
 
+// Route::get('/',function(){
+// 	echo 'text';
+// 	return view('welcome');
+// });
+
+// 创建后台分类控制器
+Route::resource('admin/cates','Admin\CatesController');
