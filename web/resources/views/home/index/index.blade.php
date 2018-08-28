@@ -14,16 +14,16 @@
         </li>
          @endforeach
        
-        
       </ul>
       <ul class="flex-direction-nav">
         <li><a class="flex-prev" href="javascript:;">Previous</a></li>
         <li><a class="flex-next" href="javascript:;">Next</a></li>
       </ul>
       <ol id="bannerCtrl" class="flex-control-nav flex-control-paging">
-        @foreach($slid as $k=>$v)
+       @foreach($slid as $k=>$v)
         <li><a></a></li>
         @endforeach
+
       </ol>
       </div>
      
@@ -106,6 +106,12 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="line">
+                  <h1>
+            <a href="#"><img src="img/2.jpg">
+            <p></p>
+            <span>01&nbsp;冬季出行必备十大条件</span>
+            </a>
+          </h1>
                   <h1>姓名：张先生</h1>
                   <h2>预定线路：你走进大山深处，探索最神秘的大山遗迹</h2>
                   <h3>预定时间：2017-12-28</h3>

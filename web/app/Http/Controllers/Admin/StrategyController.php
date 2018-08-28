@@ -18,7 +18,7 @@ class StrategyController extends Controller
     {
         $search = $request -> input('search','');//搜索关键词
         //模糊查询加分页
-        $data = Strategy::where('address','like','%'.$search.'%') ->  orderBy('id') -> paginate(5);
+        $data = Strategy::where('address','like','%'.$search.'%') -> paginate(5);
         return view('admin.strategy.index',['data'=>$data,'request'=>$request->all()]);
     }
 

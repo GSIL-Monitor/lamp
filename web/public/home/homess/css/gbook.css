@@ -1,0 +1,270 @@
+* {
+	box-sizing: border-box;
+}
+.project-content {
+    padding-right: 3.1%;
+    padding-left: -5px;
+    background-color: #fff;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    border-radius: 4px;
+    line-height: 1.8;
+    font-size: 16px;
+    /*position: relative;*/
+}
+
+.pl {
+    width: 90%;
+    border: 1px solid #e8e8e8;
+    padding: 0px;
+    border-radius: 5px;
+    margin-left: 8%;
+    position: relative;
+    margin-top: 20px;
+}
+
+.tx {
+    position: absolute;
+    top: 0px;
+    left: -55px;
+    width: 55px;
+    height: 50px;
+    background-image: url(/homes/liuyan/images/tx.png);
+    background-repeat: no-repeat;
+    background-position: right 10px;
+    padding-right: 12px;
+    box-sizing: border-box;
+}
+
+.pl a {
+    color: #5d6c80;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.project-content img {
+    max-width: 100%;
+}
+
+.tx img {
+    /*width: 100%;*/
+    width: 43px;
+    height: 43px;
+    border-radius: 45px;
+}
+
+.pl ul {
+    padding: 0px 20px;
+    line-height: 26px;
+}
+
+.plbg {
+    background-color: #fafafa;
+    border-bottom: 1px dotted #DCDCDC;
+}
+
+.z13 {
+    font-size: 13px;
+}
+
+.f {
+    float: left;
+}
+
+.jl {
+    color: #ff7800;
+    padding-left: 20px;
+    display: none;
+}
+
+.r {
+    float: right;
+}
+
+.dr {
+    clear: right;
+}
+
+.pl .plul {
+    word-wrap: break-word;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    background-color: #fafafa;
+    box-sizing: border-box;
+}
+
+.tx2 {
+    width: 45px;
+    left: -45px;
+}
+
+.tx2 img{
+    width: 33px;
+    height: 33px;
+}
+
+.z12 {
+    font-size: 12px;
+}
+
+.hf {
+    float: right;
+    font-size: 12px;
+    line-height: 26px;
+}
+
+.hf:hover {
+    color: red;
+    text-shadow:0.1em 0.1em 0.3em #333333;
+}
+
+.project-content h4 {
+    font-size: 22px;
+    border-left: 2px solid #c7c7c7;
+    padding-left: 10px;
+    line-height: 18px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-weight: 400;
+}
+
+.z14 {
+    font-size: 14px;
+}
+
+.in100, .in2, .huif {
+    border-top: 0px;
+}
+
+.in2 {
+    padding: 20px 25px;
+}
+
+.in100, .in2 {
+    border-radius: 3px 3px 0 0;
+    height: auto;
+    margin: auto;
+    position: relative;
+}
+
+.alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.alert-warning {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
+
+textarea {
+    outline: none;
+    border: 0px;
+    transition: 1s;
+    border: 1px solid #DDDDDD;
+    -moz-box-shadow: 2px 2px 4px #f5f5f5 inset;
+    -webkit-box-shadow: 2px 2px 4px #f5f5f5 inset;
+    box-shadow: 2px 2px 4px #f5f5f5 inset;
+    padding: 10px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+textarea {
+    overflow: auto;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+}
+
+.top10 {
+    margin-top: 10px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #3ab143;
+    border-color: #399c3f;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.huif {
+	width: 570px;
+	/*border-top: 1px solid #ebebeb;*/
+	/*padding-top: 10px;*/
+	position: absolute;
+	left: 0px;
+	display: none;
+	box-sizing: border-box;
+}
+
+.huif a {
+	color: #5d6c80;
+	text-decoration: none;
+	cursor: pointer
+}
+
+.plbg2 {
+	background-color: #f1f1f1
+}
+
+.qxhf {
+	float: right;
+}
+
+.qxhf a {
+	color: #5d6c80;
+	text-decoration: none;
+	cursor: pointer
+}

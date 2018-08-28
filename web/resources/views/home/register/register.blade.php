@@ -141,6 +141,7 @@
 			var isUname = false;
 			var isEmail = false;
 			var isPhone = false;
+			var isPass = false;
 			
 		    $("#username").focus(function(){
 		    	$("#a1").css("display","inline");
@@ -164,14 +165,15 @@
 		    	var name = $("#username").val();
 		    	var name_preg = /^[a-zA-Z][a-zA-Z0-9_]{4,15}$/;
 		    	if(name_preg.test(name)){
-		    		
 		    		$("#b1").css("display","none");
 		    		$("#b2").css("display","inline");
+		    		isUname = true;
 		    	}else{
 		    		$("#b2").css("display","none");
 		    		$("#b1").css("display","inline");
 		    		$("#a2").css("display","inline");
 		    		$("#a2").html('用户名格式错误');
+		    		isUname = false;
 		    	}
 		    });
 		    //验证密码
@@ -196,11 +198,13 @@
 		    		$("#b5").css("display","none");
 		    		$("#b6").css("display","inline");
 		    		$("#a5").css("display","none");
+		    		isPass = true;
 		    	}else{
 		    		$("#b6").css("display","none");
 		    		$("#b5").css("display","inline");
 		    		$("#a5").css("display","inline");
 		    		$("#a5").html('两次输入的密码不同');
+		    		isEmail = false;
 		    	}
 		    });
 		    //验证手机号
@@ -211,11 +215,13 @@
 		    		$("#b7").css("display","none");
 		    		$("#b8").css("display","inline");
 		    		$("#a6").css("display","none");
+		    		isPhone = true;
 		    	}else{
 		    		$("#b8").css("display","none");
 		    		$("#b7").css("display","inline");
 		    		$("#a6").css("display","inline");
 		    		$("#a6").html('手机号格式不正确');
+		    		isPhone = false;
 		    	}
 		    });
 		    //验证邮箱 
@@ -226,18 +232,22 @@
 		    		$("#b9").css("display","none");
 		    		$("#b10").css("display","inline");
 		    		$("#a7").css("display","none");
+		    		isEmail = true;
 		    	}else{
 		    		$("#b10").css("display","none");
 		    		$("#b9").css("display","inline");
 		    		$("#a7").css("display","inline");
 		    		$("#a7").html('邮箱格式不正确');
+		    		isEmail = false;
 		    	}
 		    });
 		    // 表单的提交事件
-			$('form').submit = function(){
-				
+			$('#form').submit(function(){
+				if(isUname && isEmail && isPhone && isPass){
+					return true;
+				}
 				return false;
-			}
+			});
 		});
 	</script>
 @endsection

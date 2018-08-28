@@ -1,0 +1,55 @@
+@media screen and (max-width: 450px)
+.layui-form-item .layui-form-label {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.layui-form-label {
+    float: left;
+    display: block;
+    padding: 9px 15px;
+    width: 80px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: right;
+}
+
+@media screen and (max-width: 450px)
+.layui-form-item .layui-input-inline {
+    display: block;
+    float: none;
+    left: -3px;
+    width: auto;
+    margin: 0 0 10px 112px;
+}
+
+.user_phone_code .layui-input {
+    width: 100px;
+    float: left;
+}
+
+.user_phone_code_button {
+    float: left;
+    width: 115px;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 3px;
+    background: #22ac38;
+    margin-left: 8px;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+.user_phone_code_button:hover {
+    cursor: pointer;
+    background: #27cb41;
+}
+
+.layui-form-item:after {
+    content: '\20';
+    clear: both;
+    display: block;
+    height: 0;
+}

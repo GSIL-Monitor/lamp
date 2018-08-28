@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Models\Strategy;
+
 use App\Models\Link;
 class StrategyController extends Controller
 {
@@ -25,4 +26,5 @@ class StrategyController extends Controller
         $link = Link::where('status','=',2)->get();
         return view('home.strategy.detail',['link'=>$link,'data'=>$data]);
     }
+
 }

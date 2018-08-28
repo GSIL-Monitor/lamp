@@ -22,8 +22,12 @@ class SlidController extends Controller
         $data = Slid::where('id','like','%'.$search.'%') -> paginate(10);
 
         return view('admin.slid.index',['data'=>$data,'request'=>$request->all()]);
+<<<<<<< HEAD
         //加载模板
         return view('admin.slid.index',['data' => $data]);
+=======
+        
+>>>>>>> origin/mfb
     }
 
     /**

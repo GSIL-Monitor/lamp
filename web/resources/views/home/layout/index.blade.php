@@ -47,7 +47,9 @@
         overflow: hidden;
         margin: -35px 0 0;
         display: block;
+
         background: url(/home/images/ad_ctr.png) no-repeat;
+
         position: absolute;
         top: 50%;
         z-index: 10;
@@ -98,7 +100,9 @@
       }
 
       .flex-control-paging li a {
+
         background: url(/home/images/dot.png) no-repeat 0 -16px;
+
         display: block;
         height: 16px;
         overflow: hidden;
@@ -149,7 +153,9 @@
     <div class="header">
       <div class="container2">
         <div class="logo">
+
           <a href="/home/index"><img style="height: 50px;width: 220px" src="/home/img/logo1.png" /></a>
+
         </div>
         <div class="nav">
           <ul>
@@ -188,12 +194,12 @@
 
 
             <li class="navsub2">
-              <a class="navsub_bg2" href="raiders.html">第七社区</a>
+              <a class="navsub_bg2" href="">第七社区</a>
               <div class="navsub_box2">
-                <a href="scenic.html">旅行论坛</a>
-                <a href="hotel.html">旅行问答</a>
-                <a href="foods.html">结伴同行</a>
-                <a href="travels.html">走心游记</a>
+                <a href="/home/bbs">旅行论坛</a>
+                <a href="/home/mach">旅行问答</a>
+                <a href="/home/forums">结伴同游</a>
+                <a href="/home/strategyss">目的地攻略</a>
               </div>
               <script type="text/javascript">
                 $(function() {
@@ -245,14 +251,14 @@
           <a href="//nav.qyer.com/copyright" target="_blank" rel="nofollow" data-bn-ipg="foot-clause-3">版权声明</a>
           <a href="//nav.qyer.com/exemption" target="_blank" rel="nofollow" data-bn-ipg="foot-clause-4">免责声明</a>
           <a href="//nav.qyer.com/contact" target="_blank" rel="nofollow" data-bn-ipg="foot-about-2">联系我们</a></p>
-        <p class="info">2004-2018 ? 第七城市? qyer.com All rights reserved. Version v5.57 京ICP备12003524号 京公网安备11010102001935号 京ICP证140673号
+        <p class="info">2004-2018  第七城市 ????? 京ICP备12003524号 京公网安备11010102001935号 京ICP证140673号
           <a target="_blank" style="color:inherit;" href="//static.qyer.com/images/yyzz.jpg">营业执照</a>
           <a target="_blank" style="color:inherit;" href="//static.qyer.com/images/jyxkz.jpg">经营许可证</a></p>
         <!--友情链接模块-->
         <!-- 友情链接 -->
         <dl class="qyer_footer_links">
           <dt>友情链接：</dt>
-          @foreach ($link as $k=>$v)
+          @foreach($common_cates_link as $k=>$v)
           <dd>
             <a target="_blank" href="{{ $v->lurl }}" data-bn-ipg="foot-hand-1">{{ $v->lname }}</a>
           </dd>

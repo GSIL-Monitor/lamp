@@ -13,8 +13,7 @@ class CatesController extends Controller
 {
     public static function getCates()
     {
-        // $sql = "select *,concat(path,',',id) as paths from admin_cates order by paths asc";
-        // $data = \DB::select($sql);
+        
         $data = Admin_cates::select('*',DB::raw('concat(path,",",id) as paths'))->orderBy('paths','asc')->get();
         foreach ($data as $key => $value) {
             $n = substr_count($value->path, ',');    // 统计,出现的次数

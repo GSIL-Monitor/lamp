@@ -4,7 +4,7 @@
 <!-- 在占位符中填充内容 -->
 @section('container')
 
-
+<link rel="stylesheet" type="text/css" href="/admin/bootstrap/css/bootstrap.min.css">
 
 
 <!-- 显示错误 -->

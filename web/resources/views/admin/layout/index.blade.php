@@ -28,7 +28,7 @@
 <!-- jQuery-UI Stylesheet -->
 <link rel="stylesheet" type="text/css" href="/admin/jui/css/jquery.ui.all.css" media="screen">
 <link rel="stylesheet" type="text/css" href="/admin/jui/jquery-ui.custom.css" media="screen">
-
+<link rel="stylesheet" type="text/css" href="/admin/bootstrap/css/bootstrap.min.css">
 <!-- Theme Stylesheet -->
 <link rel="stylesheet" type="text/css" href="/admin/css/mws-theme.css" media="screen">
 <link rel="stylesheet" type="text/css" href="/admin/css/themer.css" media="screen">
@@ -312,6 +312,24 @@
                             <li><a href="/admin/strategy">城市攻略列表</a></li>
                             <li><a href="/admin/travel/create">添加主题游</a></li>
                             <li><a href="/admin/travel">主题游列表</a></li>
+                        </ul>
+                    </li>    
+                </ul>
+                 <ul>     
+                    <li>
+                        <a href="#"><i class="icon-list"></i>侧栏小广告管理</a>
+                        <ul>
+                            <li><a href="/admin/job">广告列表</a></li>
+                            <li><a href="/admin/job/create">添加广告</a></li>
+                        </ul>
+                    </li>    
+                </ul>
+                <ul>     
+                    <li>
+                        <a href="#"><i class="icon-list"></i>旅行口碑榜管理</a>
+                        <ul>
+                            <li><a href="/admin/strategyss">管理口碑列表</a></li>
+                            <li><a href="/admin/strategyss/create">添加最佳口碑榜</a></li>
                         </ul>
                     </li>    
                 </ul>
