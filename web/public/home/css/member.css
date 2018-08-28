@@ -1,0 +1,536 @@
+.membertop {
+	background: url(../img/listbg_02.jpg) no-repeat center;
+	overflow: hidden;
+	margin-top: -1px;
+	padding-bottom: 30px;
+	clear: both;
+}
+
+.mtopleft {
+	overflow: hidden;
+	width: 50%;
+	float: left;
+}
+
+.mtopleft h1 {
+	height: 60px;
+	width: 60px;
+	overflow: hidden;
+	float: left;
+	border-radius: 100px;
+	border: 5px #FA3A39 solid;
+}
+
+.mtopleft h1 img {
+	width: 100%
+}
+
+.mtopleft h2 {
+	width: 200px;
+	float: left;
+	margin-left: 20px;
+	font-size: 18px;
+	color: #fff;
+}
+
+.mtopleft h2 span {
+	display: block;
+	font-size: 18px;
+	margin-top: 10px;
+}
+
+.mtopleft h2 b {
+	display: block;
+	font-size: 14px;
+	font-weight: 200px;
+}
+
+.mtopright {
+	overflow: hidden;
+	width: 10%;
+	float: right;
+}
+
+.mtopright a {
+	width: 100px;
+	line-height: 40px;
+	color: #FA3A39;
+	border: 2px #ED3A04 solid;
+	display: block;
+	font-size: 16px;
+	text-align: center;
+	border-radius: 5px;
+	float: right;
+}
+
+.mtopright a:hover {
+	color: #0099FF;
+	border: 2px #0099FF solid;
+}
+
+
+/*memberbox*/
+
+.mbbox {
+	overflow: hidden;
+	margin-top: 20px;
+}
+
+.mbbox_nav {
+	overflow: hidden;
+	width: 15%;
+	background: #f9f9f9;
+	float: left;
+}
+
+.mbbox_nav ul li {
+	overflow: hidden;
+}
+
+.mbbox_nav ul li a {
+	display: block;
+	color: #333;
+	line-height: 40px;
+	padding-left: 30px;
+	font-size: 14px;
+	border-left: 5px #eee solid;
+}
+
+.mbbox_nav ul li a:hover {
+	border-left: 5px #201A30 solid;
+	background: #FA3A39;
+	color: #fff;
+}
+
+.mbbox_nav ul li a i {
+	float: right;
+	margin-right: 30px;
+}
+
+.mbbox_cen {
+	overflow: hidden;
+	width: 60%;
+	float: left;
+	margin-left: 30px;
+}
+
+
+/*memberbox end*/
+
+
+/*tab*/
+
+.tab1 {
+	width: 100%;
+	background: #f9f9f9;
+}
+
+.menu {
+	height: 40px;
+	background: #eee;
+	border-top: 1px #FA3A39 solid;
+}
+
+.menu li {
+	float: left;
+	width: 25%;
+	text-align: center;
+	line-height: 40px;
+	height: 40px;
+	cursor: pointer;
+	color: #333;
+	font-size: 14px;
+	overflow: hidden;
+}
+
+.menu li.off {
+	background: #f9f9f9;
+	color: #FF3300;
+	font-weight: bold;
+}
+
+.menudiv {
+	border-top: 0;
+	background: #f9f9f9;
+	min-height: 200px;
+}
+
+.menudiv div {
+	padding: 5px;
+	line-height: 28px;
+}
+
+
+/*tab end*/
+
+
+/*member title*/
+
+.mbtitle {
+	overflow: hidden;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.mbtitle a {
+	display: block;
+	float: right;
+	color: #999;
+	font-size: 14px;
+	margin-top: 5px;
+}
+
+.mbtitle a:hover {
+	color: #FF3300;
+}
+
+.mbtitle i {
+	margin-right: 10px;
+	color: #FA3A39;
+}
+
+
+/*member title end*/
+
+
+/*order*/
+
+.order {
+	overflow: hidden;
+}
+
+.order table {
+	width: 100%;
+	background: #fff;
+}
+
+.order table tr td {
+	border: 1px #eee solid;
+	text-align: center;
+	color: #999;
+	font-size: 12px;
+}
+
+.order table tr td h1 {
+	color: #333;
+	text-align: center;
+	font-size: 14px;
+	line-height: 35px;
+}
+
+.order table tr td .ordertd {
+	overflow: hidden;
+}
+
+.order table tr td .ordertd a {
+	display: block;
+	color: #333;
+	overflow: hidden;
+}
+
+.order table tr td .ordertd h2 {
+	width: 60px;
+	height: 60px;
+	overflow: hidden;
+	float: left;
+	margin-right: 10px;
+}
+
+.order table tr td .ordertd h2 img {
+	width: 100%;
+}
+
+.order table tr td .ordertd h3 {
+	width: 100px;
+	float: left;
+	font-size: 14px;
+	line-height: 24px;
+}
+.order table tr td p{
+	text-align: center;
+}
+.order table tr td p a{
+	color: #2AACE9;
+margin: 0 5px;
+}
+
+/*order end*/
+.mbcbox{
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.mbcbg{
+	background: #f9f9f9;
+	overflow: hidden;
+	min-height: 200px;
+	border-top: 1px #FA3A39 solid;
+	padding: 10px;
+}
+.mbcbg ul{
+	width:758px;
+}
+.mbcbg ul li{
+	overflow: hidden;
+	background: #fff;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	padding: 10px;
+	width: 349px;
+	float: left;
+}
+.mbcbg ul li a{
+	display: block;
+	color: #201A30;
+}
+.mbcbg ul li h1{
+	width: 80px;
+	height: 80px;
+	float: left;
+	overflow: hidden;
+	margin-right: 10px;
+}
+.mbcbg ul li h2{
+	width: 259px;
+	overflow: hidden;
+	float: right;
+	font-size: 14px;
+}
+.mbcbg ul li h2 span{
+	display: block;
+	color: #999;
+}
+.mbcbg ul li h2 b{
+	color: #FA3A39;
+}
+
+.gerenbg{
+	background: #f9f9f9;
+	overflow:hidden;
+	border-top: 2px #FA3A39 solid;
+	padding: 20px;
+}
+.gerenxx{
+	overflow: hidden;
+	width: 70%;
+	margin: 0 auto;
+}
+.gerenxx  tr td{
+	line-height: 50px;
+	font-size: 16px;
+	border-bottom: 1px #ccc dashed;
+
+}
+.gerenxx  tr td strong{
+	display:block;
+	text-align: right;
+	margin-right: 30px;
+	color: #999;
+}
+.gerenxx  tr td i{
+	color: #FA3A39;
+}
+.gerenxx  tr td h1{
+	width: 80px;
+	height: 80px;
+	border-radius: 80px;
+	overflow: hidden;
+}
+.gerenxx  tr td input{
+	padding: 0 20px;
+	line-height: 40px;
+}
+.gerenxx  tr td h2{
+	line-height: 35px;
+}
+.gerenxx  tr td h1 img{
+	width: 100%;
+}
+.memberbtn{
+	overflow: hidden;
+	margin-top: 50px ;
+}
+.memberbtn a{
+	display: block;
+	width: 150px;
+	line-height: 50px;
+	text-align: center;
+	background: #2AACE9;
+	color: #fff;
+	font-size: 16px;
+	border-radius: 5px;
+	margin-left: 230px;
+	float: left;
+
+}
+/*修改*/
+.gerenxg{
+	overflow: hidden;
+	width: 70%;
+	margin: 0 auto;
+}
+.gerenxg  tr td{
+	line-height: 50px;
+	font-size: 16px;
+	border-bottom: 1px #ccc dashed;
+
+}
+.gerenxg  tr td strong{
+	display:block;
+	text-align: right;
+	margin-right: 30px;
+	color: #999;
+}
+.gerenxg  tr td i{
+	color: #FA3A39;
+}
+.gerenxg  tr td h1{
+	width: 80px;
+	height: 80px;
+	border-radius: 80px;
+	overflow: hidden;
+}
+.gerenxg  tr td input{
+	padding: 0 20px;
+		border-radius: 5px;
+	line-height: 40px;
+	border: 1px #eee solid;
+	font-size: 14px;
+}
+.gerenxg  tr td h2{
+	line-height: 35px;
+	margin-top: 20px;
+}
+.gerenxg  tr td h1 img{
+	width: 100%;
+}
+
+.file {
+    position: relative;
+    display: inline-block;
+    background: #D0EEFF;
+    border: 1px solid #99D3F5;
+    border-radius: 4px;
+    padding: 4px 12px;
+    overflow: hidden;
+    color: #1E88C7;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+}
+.file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.file:hover {
+    background: #AADFFD;
+    border-color: #78C3F3;
+    color: #004974;
+    text-decoration: none;
+}
+/*mbbox_right*/
+
+.mbbox_right {
+	overflow: hidden;
+	width: 20%;
+	float: right;
+}
+
+.hyxz{
+	overflow: hidden;
+
+}
+.hyxz h1{
+	font-size: 16px;
+	color: #333; 
+	border-bottom: 1px #FA3A39 solid;
+	line-height: 35px;
+	font-weight: bold;
+}
+.hyxz h1 i{
+	margin-right: 5px;
+}
+.hyxz p{
+	font-size: 12px;
+    line-height: 25px;
+	color: #666;
+	margin-top: 10px;
+}
+/*mbbox_right end*/
+/*login*/
+
+.logintop {
+	width: 570px;
+	float: left;
+	font-size: 40px;
+	margin-top: 15px;
+	color: #fff;
+	font-weight: 200;
+	clear: both;
+}
+
+.login {
+	overflow: hidden;
+	height: 500px;
+	margin-top: -1px;
+	background: url(../img/listbg_02.jpg) no-repeat center;
+	position: relative;
+	clear: both;	
+}
+
+.login .loginbg {
+	width: 500px;
+	margin: 60px auto;
+}
+
+.login .loginbg h1 {
+	font-size: 30px;
+	text-align: center;
+	color: #fff;
+}
+
+.login .loginbg h2 {
+	overflow: hidden;
+}
+
+.login .loginbg h2 input {
+	padding: 5px 2.5%;
+	margin: 10px;
+	line-height: 40px;
+	width: 90%;
+	border-radius: 50px;
+	font-size: 18px;
+	text-align: center;
+}
+
+.login .loginbg h3 {
+	overflow: hidden;
+	margin: 0 30px;
+}
+
+.login .loginbg h3 a {
+	float: left;
+	color: #fff;
+	font-size: 14px;
+}
+
+.login .loginbg h3 a:hover {
+	color: #FA3A39;
+}
+
+.login .loginbg h4 button {
+	text-align: center;
+	width: 95%;
+	padding: 5px 2.5%;
+	margin: 0 10px;
+	border-radius: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	background: #FA3A39;
+	color: #fff;
+}
+
+
+/*login end*/

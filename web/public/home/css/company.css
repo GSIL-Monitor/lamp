@@ -1,0 +1,111 @@
+﻿/*quanju*/
+body { margin:0; padding:0; background: #FFF; font-size:12px; color:#000;font:"����"}
+div,form,img,ul,li {margin:0; padding:0; border:0;line-height: 22px;list-style:none;}
+h1,h2,h3,h4,h5,h6 { margin:0; padding:0;}
+table,td,tr,th,div {font-size:12px;line-height:24px;font-family:arial,simsun;word-break:break-all;word-wrap:break-word;text-align:left}
+a {text-decoration:none;color:#4F5F72}
+a:hover {text-decoration:underline;color:#4F5F72}
+
+/*title*/
+.title {clear:both;float:left;width:100%;margin:0 0 10px 0;height:34px;background:url(../images/back2.gif) #51B5EE;}
+.title ul {width:960px;height:34px;margin:0 auto}
+.title ul li {float:left;width:86px;line-height:34px;height:34px;overflow:hidden;display:block;text-align:center;font-size:14px;font-weight:bold;color:#ffffff;}
+.title ul li a {color:#ffffff;text-align:center;display:block;vertical-align:middle;}
+.title ul li.sele {background:url(../images/titleback.gif);color:#3795D5;}
+.title ul li.sele a {color:#3795D5;}
+/*img*/
+.im {clear:both;width:960px;margin:0 auto;text-align:center;background:#5CC7F5; position:relative;}
+/*zhengwen*/
+.wrap {clear:both;float:left;width:100%;}
+.main {clear:both;width:960px;margin:0 auto;text-align:center;padding:10px 0 0 0;color:#4F5F72}
+.left1 {float:left;width:680px;}
+.boxa1 {clear:both;float:left;width:678px;border:1px solid #BFCCD6;margin:0 0 10px 0}
+.boxa1 h1 {width:96%;margin:0 auto;padding:5px 0 0 0;font-size:14px;color:#2D5978;line-height:30px;border-bottom:1px solid #D3E2EA}
+.boxa1 ul {clear:both;width:95%;padding:10px 0 10px 12px;float:left}
+.boxa1 .l1 {width:145px;float:left;}
+.boxa1 .l1 ul {clear:both;width:100%;margin:0;padding:0;}
+.boxa1 .l1 ul li {clear:both;width:100%;float:left;height:105px}
+.boxa1 .l1 span {float:left;width:100%;margin:0;padding:0}
+.boxa1 .r1 {width:488px;float:right;line-height:25px;}
+.boxa2 {clear:both;float:left;width:678px;border:1px solid #BFCCD6;margin:0 0 10px 0}
+.boxa2 h1 {width:96%;margin:0 auto;padding:5px 0 0 0;font-size:14px;color:#2D5978;line-height:30px;border-bottom:1px solid #D3E2EA}
+.boxa2 ul {clear:both;width:95%;padding:10px 0 10px 15px;float:left;line-height:30px}
+.boxa3 {clear:both;float:left;width:678px;border:1px solid #BFCCD6;margin:0 0 10px 0}
+.boxa3 h1 {width:96%;margin:0 auto;padding:5px 0 0 0;font-size:14px;color:#2D5978;line-height:30px;border-bottom:1px solid #D3E2EA}
+.boxa3 ul {clear:both;width:93%;padding:10px 0 10px 25px;float:left;line-height:30px}
+.boxa3 ul h3 {width:100%;font-weight:bold;font-size:12px;margin:0 0 10px 0}
+.boxa3 ul h4 {width:100%;font-weight:bold;font-size:12px;margin:10px 0 2px 0}
+.boxa4 {clear:both;float:left;width:678px;border:1px solid #BFCCD6;margin:0 0 10px 0;}
+.boxa4 h1 {width:96%;margin:0 auto 10px auto;padding:5px 0 0 0;font-size:14px;color:#2D5978;line-height:30px;border-bottom:1px solid #D3E2EA}
+.boxa4 h1 span {font-size:12px;font-weight:normal;width:50px;float:right}
+.boxa4 ul {width:95%;margin:0 auto;}
+.boxa4 ul li {width:100%;float:left;padding:5px 0 0 0;_margin:0;line-height:50px;border-bottom:1px dotted #D3E2EA}
+.boxa4 ul li span {width:40px;float:left;height:50px}
+.boxa5 {clear:both;float:left;width:958px;border:1px solid #BFCCD6;margin:0 auto 10px auto}
+.boxa5 h1 {width:96%;margin:0 auto;padding:10px 0 0 0;font-size:16px;color:#2D5978;line-height:24px;}
+.boxa5 h2 {clear:both;width:96%;margin:0 auto;padding:10px 0 0 0;font-size:14px;font-weight:bold;color:#2D5978;line-height:24px;border-bottom:1px dotted #D3E2EA;text-indent:5px}
+.boxa5 h2 span {width:9px;height:14px;padding:7px 0 0 0;float:left;background:url(../images/yellowicon.gif) no-repeat 2px 7px}
+.boxa5 ul {float:left;clear:both;width:90%;padding:10px 0 10px 35px;line-height:26px;color:#6A6A6A;}
+.boxa5 .bl {color:#6A6A6A;font-weight:bold;font-size:14px}
+
+.boxa6 {clear:both;float:left;width:678px;border:1px solid #BFCCD6;margin:0 0 10px 0;}
+.boxa6 h1 {width:96%;margin:0 auto 10px auto;padding:5px 0 0 0;font-size:14px;color:#2D5978;line-height:30px;border-bottom:1px solid #D3E2EA}
+.boxa6 h1 span {font-size:12px;font-weight:normal;width:50px;float:right}
+.boxa6 ul {width:95%;margin:0 auto;}
+.boxa6 ul li {width:100%;float:left;padding:5px 0 0 0;_margin:0;line-height:50px;border-bottom:1px dotted #D3E2EA}
+.boxa6 ul li span {float:left;width:50%;color:#66aa99;line-height:20px;}
+
+
+.boxa6 ul li{text-indent:44px;line-height:20px;background-repeat:no-repeat;margin-top:7px;font-size:12px;}
+.boxa6 ul li.xun1{background-image:url(../images/xun1.jpg);}
+.boxa6 ul li.xun2{background-image:url(../images/xun2.jpg);}
+.boxa6 ul li.xun3{background-image:url(../images/xun3.jpg);}
+.boxa6 ul li.xun4{background-image:url(../images/xun4.jpg);}
+.year{display:none;}
+
+.greyline {width:100%;background:url(../images/greyline.gif);height:1px;line-height:1px;margin:15px 0 15px 0}
+.gotop {text-indent:570px;margin:10px 0 0 0}
+.gotop a {text-decoration:underline}
+.gotop a:hover {text-decoration:none}
+.contact {width:100%;color:#2A5BAB;line-height:28px;font-weight:bold;font-size:14px;margin:0 0 10px 0}
+
+/*right*/
+.right1 {float:right;width:270px;}
+.boxb1 {clear:both;float:left;width:268px;border:1px solid #BFCCD6;margin:0 0 10px 0;height:282px}
+.boxb1 h1 {width:92%;margin:0 auto;padding:5px 0 0 0;font-size:14px;color:#2D5978;line-height:30px;border-bottom:1px solid #D3E2EA}
+.boxb1 h1 span {font-size:12px;font-weight:normal;width:50px;float:right}
+.boxb1 ul {width:92%;margin:12px auto 0 auto;}
+.boxb1 ul li {width:100%;float:left;padding:0 0 10px 0;_margin:0;line-height:24px}
+.boxb1 ul li span {width:40px;float:left;}
+.boxb2 {clear:both;float:left;width:268px;height:180px;border:1px solid #BFCCD6;margin:0 0 10px 0}
+.boxb2 h1 {width:92%;margin:0 auto;padding:5px 0 0 0;font-size:14px;color:#2D5978;line-height:30px;border-bottom:1px solid #D3E2EA}
+.boxb2 ul {width:92%;margin:10px auto;}
+.boxb2 ul li {width:100%;float:left;margin:0 0 0 0}
+.boxb3 {clear:both;float:left;width:268px;border:1px solid #BFCCD6;margin:0 0 10px 0;}
+.boxb3 h1 {width:92%;margin:0 auto;padding:5px 0 0 0;font-size:14px;color:#2D5978;line-height:30px;border-bottom:1px solid #D3E2EA}
+.boxb3 h1 span {font-size:12px;font-weight:normal;width:50px;float:right}
+.boxb3 ul {width:92%;margin:12px auto 0 auto;}
+.boxb3 ul li {width:100%;float:left;padding:0 0 5px 0;_margin:0;line-height:24px;clear:both;zoom:1;overflow:hidden;}
+.boxb3 ul li span {width:40px;float:left;}
+
+
+/*bottom*/
+.wobo{width:212px;height:39px;position:absolute;left: 745px;top: -49px;}
+.wobo a { width:212px; height:39px; background:url(../images/wobo.jpg) no-repeat; display:block; }
+
+
+.my_fbtm{}
+
+
+.my_cinfo{ float:left;color:#555; }
+.my_cinfo .my_service{ color:#888; }
+.my_cinfo p{margin:0;}
+.my_fnav{ overflow:hidden;zoom:1; }
+.my_fnav li{ float:right;display:inline;}
+.my_fnav li a{ padding:0 5px;border-right:1px solid #1C8ED3; }
+.my_fnav li.my_fnav_last a{border-right:none;padding-right:0; }
+.my_fnav .a_job{ color:#f00;}
+.my_linfo{ float:right;text-align: right;color:#888; width:600px;}
+.my_cred{ font-size:0;text-align:right;margin-right:3px; }
+.my_cred a{ margin-left:10px;zoom:1; font-size: 12px;word-spacing: normal;letter-spacing: normal; }
+

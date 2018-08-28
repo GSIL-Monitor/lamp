@@ -32,6 +32,17 @@
 <!-- Theme Stylesheet -->
 <link rel="stylesheet" type="text/css" href="/admin/css/mws-theme.css" media="screen">
 <link rel="stylesheet" type="text/css" href="/admin/css/themer.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/admin/css/page_page.css">
+
+<!-- 图片上传 -->
+<link rel="stylesheet" type="text/css" href="/admin2/css/webuploader.css" />
+<link rel="stylesheet" type="text/css" href="/admin2/css/style.css" />
+<script src="/admin2/js/jquery-1.9.min.js"></script>
+<script src="/admin2/js/webuploader.js"></script>
+<script src="/admin2/js/jquery.sortable.js"></script>
+<script src="/admin2/js/upload.js"></script>
+
+
 
 <title>MWS Admin - Dashboard</title>
 
@@ -39,38 +50,38 @@
 
 <body>
 
-	<!-- Themer (Remove if not needed) -->  
+    <!-- Themer (Remove if not needed) -->  
 
     <!-- Themer End -->
 
-	<!-- Header -->
-	<div id="mws-header" class="clearfix">
+    <!-- Header -->
+    <div id="mws-header" class="clearfix">
     
-    	<!-- Logo Container -->
-    	<div id="mws-logo-container">
+        <!-- Logo Container -->
+        <div id="mws-logo-container">
         
-        	<!-- Logo Wrapper, images put within this wrapper will always be vertically centered -->
-        	<div id="mws-logo-wrap">
-            	<img src="/admin/images/mws-logo.png" alt="mws admin">
-			</div>
+            <!-- Logo Wrapper, images put within this wrapper will always be vertically centered -->
+            <div id="mws-logo-wrap">
+                <img src="/admin/images/mws-logo4.png" alt="mws admin">
+            </div>
         </div>
         
         <!-- User Tools (notifications, logout, profile, change password) -->
         <div id="mws-user-tools" class="clearfix">
         
-        	<!-- Notifications -->
-        	<div id="mws-user-notif" class="mws-dropdown-menu">
-            	
+            <!-- Notifications -->
+            <div id="mws-user-notif" class="mws-dropdown-menu">
+                
                 
                 <!-- Unread notification count -->
                 
                 
                 <!-- Notifications dropdown -->
                 <div class="mws-dropdown-box">
-                	<div class="mws-dropdown-content">
+                    <div class="mws-dropdown-content">
                         <ul class="mws-notifications">
-                        	<li class="read">
-                            	<a href="#">
+                            <li class="read">
+                                <a href="#">
                                     <span class="message">
                                         Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
                                     </span>
@@ -79,8 +90,8 @@
                                     </span>
                                 </a>
                             </li>
-                        	<li class="read">
-                            	<a href="#">
+                            <li class="read">
+                                <a href="#">
                                     <span class="message">
                                         Lorem ipsum dolor sit amet
                                     </span>
@@ -89,8 +100,8 @@
                                     </span>
                                 </a>
                             </li>
-                        	<li class="unread">
-                            	<a href="#">
+                            <li class="unread">
+                                <a href="#">
                                     <span class="message">
                                         Lorem ipsum dolor sit amet
                                     </span>
@@ -99,8 +110,8 @@
                                     </span>
                                 </a>
                             </li>
-                        	<li class="unread">
-                            	<a href="#">
+                            <li class="unread">
+                                <a href="#">
                                     <span class="message">
                                         Lorem ipsum dolor sit amet
                                     </span>
@@ -111,7 +122,7 @@
                             </li>
                         </ul>
                         <div class="mws-dropdown-viewall">
-	                        <a href="#">View All Notifications</a>
+                            <a href="#">View All Notifications</a>
                         </div>
                     </div>
                 </div>
@@ -119,14 +130,14 @@
             
             <!-- Messages -->
             <div id="mws-user-message" class="mws-dropdown-menu">
-            	
+                
                 
                 <!-- Messages dropdown -->
                 <div class="mws-dropdown-box">
-                	<div class="mws-dropdown-content">
+                    <div class="mws-dropdown-content">
                         <ul class="mws-messages">
-                        	<li class="read">
-                            	<a href="#">
+                            <li class="read">
+                                <a href="#">
                                     <span class="sender">John Doe</span>
                                     <span class="message">
                                         Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
@@ -136,8 +147,8 @@
                                     </span>
                                 </a>
                             </li>
-                        	<li class="read">
-                            	<a href="#">
+                            <li class="read">
+                                <a href="#">
                                     <span class="sender">John Doe</span>
                                     <span class="message">
                                         Lorem ipsum dolor sit amet
@@ -147,8 +158,8 @@
                                     </span>
                                 </a>
                             </li>
-                        	<li class="unread">
-                            	<a href="#">
+                            <li class="unread">
+                                <a href="#">
                                     <span class="sender">John Doe</span>
                                     <span class="message">
                                         Lorem ipsum dolor sit amet
@@ -158,8 +169,8 @@
                                     </span>
                                 </a>
                             </li>
-                        	<li class="unread">
-                            	<a href="#">
+                            <li class="unread">
+                                <a href="#">
                                     <span class="sender">John Doe</span>
                                     <span class="message">
                                         Lorem ipsum dolor sit amet
@@ -171,29 +182,26 @@
                             </li>
                         </ul>
                         <div class="mws-dropdown-viewall">
-	                        <a href="#">View All Messages</a>
+                            <a href="#">View All Messages</a>
                         </div>
                     </div>
                 </div>
             </div>
-            
             <!-- User Information and functions section -->
             <div id="mws-user-info" class="mws-inset">
             
-            	<!-- User Photo -->
-            	<div id="mws-user-photo">
-                	<img src="/admin/example/profile.jpg" alt="User Photo">
+                <!-- User Photo -->
+                <div id="mws-user-photo">
+                    <img src="/admin/example/profile.jpg" alt="User Photo">
                 </div>
                 
                 <!-- Username and Functions -->
                 <div id="mws-user-functions">
                     <div id="mws-username">
-                        Hello, John Doe
+                        Hello, {{ session('key') }}
                     </div>
                     <ul>
-                    	<li><a href="#">个人信息</a></li>
-                        <li><a href="#">修改密码</a></li>
-                        <li><a href="index.html">退出</a></li>
+                        <li><a href="/admin/out">退出</a></li>
                     </ul>
                 </div>
             </div>
@@ -203,9 +211,9 @@
     <!-- Start Main Wrapper -->
     <div id="mws-wrapper">
     
-    	<!-- Necessary markup, do not remove -->
-		<div id="mws-sidebar-stitch"></div>
-		<div id="mws-sidebar-bg"></div>
+        <!-- Necessary markup, do not remove -->
+        <div id="mws-sidebar-stitch"></div>
+        <div id="mws-sidebar-bg"></div>
         
         <!-- Sidebar Wrapper -->
         <div id="mws-sidebar">
@@ -216,22 +224,14 @@
                 <span></span>
                 <span></span>
             </div>
-            
-        	<!-- Searchbox -->
-        	<div id="mws-searchbox" class="mws-inset">
-            	<form action="typography.html">
-                	<input type="text" class="mws-search-input" placeholder="Search...">
-                    <button type="submit" class="mws-search-submit"><i class="icon-search"></i></button>
-                </form>
-            </div>
-            
+            <!-- Searchbox -->
             <!-- Main Navigation -->
-            <div id="mws-navigation">
+            <div id="mws-navigation"> 
                 <ul>     
                     <li>
                         <a href="#"><i class="icon-list"></i>管理员</a>
                         <ul>
-                            <li><a href="/admin/user/index">管理员列表</a></li>
+                            <li><a href="/admin/user">管理员列表</a></li>
                             <li><a href="/admin/user/create">添加管理员</a></li>
                         </ul>
                     </li>    
@@ -242,7 +242,7 @@
                         <ul>
                             <li><a href="/admin/cates">分类列表</a></li>
                             <li><a href="/admin/cates/create">添加分类</a></li>
-                            <li><a href="/admin/cates/create">回收站</a></li>
+                            
                         </ul>
                     </li>    
                 </ul>
@@ -256,9 +256,10 @@
                 </ul>
                 <ul>     
                     <li>
-                        <a href="#"><i class="icon-list"></i>轮播图</a>
+                        <a href="#"><i class="icon-list"></i>图片轮播管理</a>
                         <ul>
-                            <li><a href="form_layouts.html">轮播图列表</a></li>
+                            <li><a href="/admin/slid">图片列表</a></li>
+                            <li><a href="/admin/slid/create">添加图片</a></li>
                         </ul>
                     </li>    
                 </ul>
@@ -266,7 +267,8 @@
                     <li>
                         <a href="#"><i class="icon-list"></i>友情链接</a>
                         <ul>
-                            <li><a href="form_layouts.html">链接列表</a></li>
+                            <li><a href="/admin/link">链接列表</a></li>
+                            <li><a href="/admin/link/create">添加链接</a></li>
                         </ul>
                     </li>    
                 </ul>
@@ -278,12 +280,21 @@
                         </ul>
                     </li>    
                 </ul>
+                <ul>     
+                    <li>
+                        <a href="#"><i class="icon-tools"></i>敏感词</a>
+                        <ul>
+                            <li><a href="/admin/sensitive/create">添加敏感词</a></li>
+                            <li><a href="/admin/sensitive">浏览敏感词</a></li>
+                        </ul>
+                    </li>    
+                </ul>
                  <ul>     
                     <li>
                         <a href="#"><i class="icon-tools"></i>网站基础设置</a>
                         <ul>
                             <li><a href="/admin/set/create">添加设置</a></li>
-                            <li><a href="/admin/set/index">浏览设置</a></li>
+                            <li><a href="/admin/set">浏览设置</a></li>
                         </ul>
                     </li>    
                 </ul>
@@ -295,22 +306,39 @@
                         </ul>
                     </li>    
                 </ul>
+                <ul>     
+                    <li>
+                        <a href="#"><i class="icon-list"></i>前台信息</a>
+                        <ul>
+                            <li><a href="/admin/food/create">添加美食</a></li>
+                            <li><a href="/admin/food">美食列表</a></li>
+                            <li><a href="/admin/play/create">添加娱乐</a></li>
+                            <li><a href="/admin/play">娱乐列表</a></li>
+                            <li><a href="/admin/scenery/create">添加热门景点</a></li>
+                            <li><a href="/admin/scenery">热门景点列表</a></li>
+                            <li><a href="/admin/strategy/create">添加城市攻略</a></li>
+                            <li><a href="/admin/strategy">城市攻略列表</a></li>
+                            <li><a href="/admin/hotel/create">添加酒店</a></li>
+                            <li><a href="/admin/hotel/">酒店列表</a></li>
+                            <li><a href="/admin/travel/create">添加主题游</a></li>
+                            <li><a href="/admin/travel">主题游列表</a></li>
+                        </ul>
+                    </li>    
+                </ul>
             </div>         
         </div>
         
         <!-- Main Container Start -->
         <div id="mws-container" class="clearfix">
         
-        	<!-- 内容区 -->
+            <!-- 内容区 -->
             <div class="container">
-                @section('container')
-
+                <!-- 读取跳转信息 -->
                 @if(session('success'))
                 <div class="mws-form-message success">
                     {{ session('success')}}
                 </div>
                 @endif
-
 
                 @if(session('error'))
                 <div class="mws-form-message error">
@@ -318,8 +346,8 @@
                 </div>
                 @endif
 
-
                 @section('container')
+
 
                 @show
             </div>
@@ -327,7 +355,7 @@
                        
             <!-- Footer -->
             <div id="mws-footer">
-            	欢 迎 来 到  第 七 城 市
+                欢 迎 来 到  第 七 城 市
             </div>
             
         </div>
