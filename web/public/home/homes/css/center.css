@@ -1,0 +1,164 @@
+.php-user-right {
+    padding: 0 0 30px 0;
+}
+
+.php-user-right .title-login {
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff4e5;
+    font-size: 12px;
+    color: #f56108;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+.title-login a:hover{
+    cursor: pointer;
+}
+
+.php-user-right .user-info-list {
+    border-bottom: 1px solid #d9dde1;
+    margin-bottom: 10px;
+}
+
+.touxiang{
+    border-top: 1px solid #d9dde1;
+    /*background: #f0c;*/
+}
+
+.layui-clear {
+    clear: both;
+}
+
+.php-user-right .user-info-list li {
+    float: left;
+    line-height: 60px;
+}
+
+.php-user-right .user-info-list .name-left {
+    width: 120px;
+    line-height: 20px;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #f3f5f7;
+    color: #07111b;
+    font-weight: 700;
+    border-left: 2px solid #000;
+}
+
+.php-user-right .user-info-list .name-right {
+    width: 50%;
+    margin-left: 8px;
+    line-height: 20px;
+    padding: 20px 0 20px 22px;
+}
+
+.layui-clear:after {
+    content: '\20';
+    clear: both;
+    display: block;
+    height: 0;
+}
+
+.php-user-right .user-info-edit {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.layui-btn {
+    display: inline-block;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 18px;
+    background-color: #009688;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.layui-btn-primary {
+    border: 1px solid #C9C9C9;
+    background-color: #fff;
+    color: #555;
+}
+
+.php-user-right .user-info-edit .layui-btn {
+    background: #2F4056;
+    color: #fff;
+}
+
+.php-user-right .set {
+    border-bottom: 1px solid #eee;
+}
+
+.php-user-right .set ul {
+    border-bottom: 1px solid #eee;
+    height: 98px;
+    line-height: 98px;
+}
+
+.php-user-right .set ul li {
+    float: left;
+    line-height: 30px;
+    height: 90px;
+    padding-top: 20px;
+}
+
+.php-user-right .set ul .email {
+    width: 60px;
+    font-size: 16px;
+    color: #d9dde1;
+    padding-left: 24px;
+}
+
+.php-user-right .set ul .updata {
+    float: right;
+}
+
+.php-user-right .set ul .info {
+    color: #93999f;
+    font-size: 14px;
+}
+
+.php-user-right .set ul .info span {
+    font-weight: bold;
+    color: #000;
+}
+
+.php-user-right .set ul li i {
+    /*color: #b5b6b7;*/
+    /*border: 1px solid #ccc;*/
+    /*border-radius: 50px;*/
+    padding-top: 18px;
+    /*background: #fff;*/
+    /*width: 160px;*/
+
+    /*margin-top: 4px;*/
+}
+
+.layui-btn-radius {
+    border-radius: 100px;
+}
+
+.layui-bg-gray {
+    background-color: #eee!important;
+    /*color: #666!important;*/
+    color: #666;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #00A7EB;
+}
+
+a:link, :visited, ins {
+    text-decoration: none!important;
+}
+
+#change_up_button:hover {
+    color:red;
+}

@@ -9,22 +9,22 @@
         @foreach($slid as $k=>$v)
         <li>
           <a title="" target="_blank" href="#">
-            <img width="1920" height="482" alt="" style="background: url({{ $v -> profile }}) no-repeat center;" src="images/alpha.png">
+            <img width="1920px" height="400px" alt="" style="background: url({{ $v -> profile }}) no-repeat center;">
+             <div></div>
           </a>
         </li>
-         @endforeach
-
+        @endforeach
        
-        
       </ul>
       <ul class="flex-direction-nav">
         <li><a class="flex-prev" href="javascript:;">Previous</a></li>
         <li><a class="flex-next" href="javascript:;">Next</a></li>
       </ul>
       <ol id="bannerCtrl" class="flex-control-nav flex-control-paging">
-         @foreach($slid as $k=>$v)
-        <li><a>{{ $v -> status }}</a></li>
-          @endforeach
+       @foreach($slid as $k => $v)
+        <li><a></a></li>
+       @endforeach
+
       </ol>
       </div>
      
@@ -101,81 +101,28 @@
           <a style="color: #333;text-align: center;margin-top: 20px;display: block;font-size: 14px;" href="#">查看更多<span style="color: #FA3A39;">>></span></a>
         </div>
         <div class="tmright">
-          <div class="tmright_top"><i class="iconfont icon-fuzhi"></i>已参与游客</div>
+          <div class="tmright_top"><i class="iconfont icon-fuzhi"></i>游客游记</div>
 
           <div id="gundon" class="swiper-container">
             <div class="swiper-wrapper">
+              @foreach($userall as $k => $v)
               <div class="swiper-slide">
                 <div class="line">
-                  <h1>姓名：张先生</h1>
-                  <h2>预定线路：你走进大山深处，探索最神秘的大山遗迹</h2>
-                  <h3>预定时间：2017-12-28</h3>
+                  <h1>
+                    <!-- <a href="/home/info/{{ $v -> uid }}"> -->
+                    姓名：
+                      @if(!empty( $v  -> nickname ))
+                        {{ $v -> nickname }}
+                      @else
+                        {{ $v -> username }}
+                      @endif 
+                    </a>
+                  </h1>
+                  <h2><a href="/home/bbs/{{ $v -> id }}">游记摘要：{{ $v -> summary }}</a></h2>
+                  <h3>发表时间：{{ $v -> created_at }}</h3>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="line">
-                  <h1>姓名：张先生</h1>
-                  <h2>预定线路：你走进大山深处，探索最神秘的大山遗迹</h2>
-                  <h3>预定时间：2017-12-28</h3>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="line">
-                  <h1>姓名：张先生</h1>
-                  <h2>预定线路：你走进大山深处，探索最神秘的大山遗迹</h2>
-                  <h3>预定时间：2017-12-28</h3>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="line">
-                  <h1>姓名：张先生</h1>
-                  <h2>预定线路：你走进大山深处，探索最神秘的大山遗迹</h2>
-                  <h3>预定时间：2017-12-28</h3>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="line">
-                  <h1>姓名：张先生</h1>
-                  <h2>预定线路：你走进大山深处，探索最神秘的大山遗迹</h2>
-                  <h3>预定时间：2017-12-28</h3>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="line">
-                  <h1>姓名：张先生</h1>
-                  <h2>预定线路：你走进大山深处，探索最神秘的大山遗迹</h2>
-                  <h3>预定时间：2017-12-28</h3>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="line">
-                  <h1>姓名：张先生</h1>
-                  <h2>预定线路：你走进大山深处，探索最神秘的大山遗迹</h2>
-                  <h3>预定时间：2017-12-28</h3>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="line">
-                  <h1>姓名：张先生</h1>
-                  <h2>预定线路：你走进大山深处，探索最神秘的大山遗迹</h2>
-                  <h3>预定时间：2017-12-28</h3>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="line">
-                  <h1>姓名：张先生</h1>
-                  <h2>预定线路：你走进大山深处，探索最神秘的大山遗迹</h2>
-                  <h3>预定时间：2017-12-28</h3>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="line">
-                  <h1>姓名：张先生</h1>
-                  <h2>预定线路：你走进大山深处，探索最神秘的大山遗迹</h2>
-                  <h3>预定时间：2017-12-28</h3>
-                </div>
-              </div>
-
+              @endforeach
             </div>
           </div>
           <script type="text/javascript">
@@ -779,28 +726,21 @@
       <div class="container">
         <div class="title3">
           <p>Yunnan popular area</p>
-          <span>云南·热门游记</span>
+          <span>热门·游记</span>
         </div>
         <div class="youji">
           <div class="youjiimg">
             <div class="section-focus-pic" id="section-focus-pic">
+
               <div class="pages" data-scro="list">
                 <ul>
-                  <li class="item" style="left:0px;">
-                    <a href="#" target="_blank"><img src="img/1.jpg"></a>
-                    <h3><a href="#" target="_blank" style="color:#FFF;text-decoration:none;">一生的守候，换来的是终身的幸福</a></h3>
-                    <div></div>
-                  </li>
+                  @foreach($userfoot as $k => $v)
                   <li class="item">
-                    <a href="#" target="_blank"><img src="img/2.jpg" width="570" height="300"></a>
-                    <h3><a href="#" target="_blank" style="color: #FFF; text-decoration:none;">我在云南等你，愿意来我就嫁给你</a></h3>
+                    <a href="/home/bbs/{{ $v -> id }}" target="_blank"><img src="{{ $v ->pro }}" width="570" height="300"></a>
+                    <h3><a href="/home/bbs/{{ $v -> id }}" target="_blank" style="color: #FFF; text-decoration:none;">{{ $v -> summary }}</a></h3>
                     <div></div>
                   </li>
-                  <li class="item">
-                    <a href="#" target="_blank"><img src="img/3.jpg" width="570" height="300"></a>
-                    <h3><a href="#" target="_blank" style="color: #FFF; text-decoration:none;">一条路走出来人生百态</a></h3>
-                    <div></div>
-                  </li>
+                  @endforeach
                 </ul>
               </div>
               <div class="controler" data-scro="controler">
@@ -814,71 +754,63 @@
               </div>
             </div>
           </div>
-          <div class="youjitxt" style="float: left; margin-left: 30px;">
-            <div class="yjtop">
-              <h1><a href="#"><i class="iconfont icon-shizhong"></i>丽江这么美，我随便去看看</a></h1>
-              <p>在上世纪八十年代,很多老柯桥人主要出行方式就是坐船。当时,柯桥进出绍兴城区有东南西北等四线,大家都是搭乘经西郭门往南的西线。在2003年之后,水上客运体系基本退出历史舞台。 不过在一年前,柯桥“水上巴士”又开通了,水上巴士不仅能观光旅游,还能在早晚高峰作为交通工具!来柯桥旅游的话,非常值得体验一下,供客人观光的水上巴士,船舱里面还备有小吃和茶水,乘船去到下一个目的地非常惬意。
-              </p>
-              <span>2017-12-13</span>
+
+          <div class="youjitxt">
+             <div class="yjtop">
+               @foreach($userlikes as $k => $v)
+              <h1><a href="/home/bbs/{{ $v -> id }}"><i class="iconfont icon-shizhong"></i>{{ $v ->summary }}</a></h1>
+              <div style="width: 320px;height: 80px">
+                 {!! $v -> content !!}
+              </div>
+               
+             
+              <span>{{ $v -> created_at }}</span>
+              @endforeach
             </div>
             <ul>
+               @foreach($userfoot as $k => $v)
               <li>
-                <a href="#"><i class="iconfont icon-add"></i>当时,柯桥进出绍兴城区有东南西北等四线</a>
+                <a href="/home/bbs/{{ $v -> id }}"><i class="iconfont icon-add"></i>{{ $v -> summary }}</a>
               </li>
-              <li>
-                <a href="#"><i class="iconfont icon-add"></i>当时,柯桥进出绍兴城区有东南西北等四线</a>
-              </li>
-              <li>
-                <a href="#"><i class="iconfont icon-add"></i>当时,柯桥进出绍兴城区有东南西北等四线</a>
-              </li>
+               @endforeach
             </ul>
-
           </div>
+        
           <div class="youjitxt">
             <div class="yjtop">
-              <h1><a href="#"><i class="iconfont icon-shizhong"></i>丽江这么美，我随便去看看</a></h1>
-              <p>在上世纪八十年代,很多老柯桥人主要出行方式就是坐船。当时,柯桥进出绍兴城区有东南西北等四线,大家都是搭乘经西郭门往南的西线。在2003年之后,水上客运体系基本退出历史舞台。 不过在一年前,柯桥“水上巴士”又开通了,水上巴士不仅能观光旅游,还能在早晚高峰作为交通工具!来柯桥旅游的话,非常值得体验一下,供客人观光的水上巴士,船舱里面还备有小吃和茶水,乘船去到下一个目的地非常惬意。
-              </p>
-              <span>2017-12-13</span>
+               @foreach($userreads as $k => $v)
+              <h1><a href="/home/bbs/{{ $v -> id }}"><i class="iconfont icon-shizhong"></i>{{ $v ->summary }}</a></h1>
+              <div style="width: 320px;height: 80px">
+                 {!! $v -> content !!}
+              </div>
+              <span>{{ $v -> created_at }}</span>
+              @endforeach
             </div>
             <ul>
+               @foreach($userreadss as $k => $v)
               <li>
-                <a href="#"><i class="iconfont icon-add"></i>当时,柯桥进出绍兴城区有东南西北等四线</a>
+                <a href="/home/bbs/{{ $v -> id }}"><i class="iconfont icon-add"></i>{{ $v -> summary }}</a>
               </li>
-              <li>
-                <a href="#"><i class="iconfont icon-add"></i>当时,柯桥进出绍兴城区有东南西北等四线</a>
-              </li>
-              <li>
-                <a href="#"><i class="iconfont icon-add"></i>当时,柯桥进出绍兴城区有东南西北等四线</a>
-              </li>
+               @endforeach
             </ul>
           </div>
         </div>
       </div>
     </div>
     <!--云南游记-->
-    <!--预定提交-->
+ <!--预定提交-->
     <div class="ydbg">
       <div class="container">
         <div class="ydtxt">
-          <h1>让旅行变得如此简单！</h1>
-          <h2>
-              <span>100%</span>满意&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <span>99%</span>好评&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <span>78%</span>好评&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <span>95%</span>好评
-          </h2>
+          <br><br><br>
+          <h1>让旅行变得如此简单！</h1><br><br><br><br><br>
+          <h1>人生就是一次充满未知的旅行!</h1>
+          
         </div>
         <div class="mzcxbtn">
-          <form>
-            <input class="input" style="width: 300px;" type="text" name="目的地" placeholder="输入目的地城市" />
-            <input class="input" style="width: 130px;" type="text" name="姓" placeholder="姓名/称呼" />
-            <input class="input" type="text" name="手机号" placeholder="请输入手机号码" />
-            <a href="javascript:void(0);" onClick="winpop();">立即预定</a>
-          </form>
+          
         </div>
       </div>
     </div>
     <!--预定提交 end-->
-   
 @endsection

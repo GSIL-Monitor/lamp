@@ -12,13 +12,23 @@
             <div class="mws-form-inline">
               <div class="mws-form-row">
                 <label class="mws-form-label">图片</label>
-                <div class="mws-form-item">
-                    <input type="file" name="profile"  class="small" value="" placeholder="">
+                <div class="mws-form-item" style="width: 570px;">
+                    <input type="file" name="profile"  class="small" ">
                     <div class="img-wrap">
                       <img src="" alt="">
                  </div>
                 </div>
               </div>
+              <div class="mws-form-row">
+                <label class="mws-form-label">描述</label>
+                <div class="mws-form-item" style="width: 1040px;">
+                    <input type="text" name="describe"  class="small" ">
+                    <div class="img-wrap">
+                      <img src="" alt="">
+                 </div>
+                </div>
+              </div>
+
               <div class="mws-form-row">
                 <label class="mws-form-label">状态</label>
                 <div class="mws-form-item clearfix">

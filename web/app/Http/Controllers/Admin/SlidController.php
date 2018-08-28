@@ -19,14 +19,10 @@ class SlidController extends Controller
 
         $search = $request -> input('search','');
 
-        $data = Slid::where('id','like','%'.$search.'%') -> paginate(5);
-
-        return view('admin.slid.index',['data'=>$data,'request'=>$request->all()]);
-        //获取数据
-        // $data = Slid::all();
-        // dump($data);
+        $data = Slid::where('id','like','%'.$search.'%') -> paginate(10);
         //加载模板
-        return view('admin.slid.index',['data' => $data]);
+        return view('admin.slid.index',['data'=>$data,'request'=>$request->all()]);
+       
     }
 
     /**
@@ -69,6 +65,7 @@ class SlidController extends Controller
             //写入数据库
             $slid = new Slid;
             $slid -> profile = $filename;
+            $slid -> describe = $request -> describe;
             $slid -> status = $request -> status;
             $res = $slid -> save();
             //跳转

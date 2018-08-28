@@ -21,19 +21,30 @@ class User extends Model implements AuthenticatableContract,
      *
      * @var string
      */
-    protected $table = 'users';
+     //设置前台文章模型表名
+    // protected $table = 'users';
+    public $table = 'users';
+    public $primaryKey = 'id';
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
-    protected $fillable = ['name', 'email', 'password'];
+    // 一对一 用户与详情表
+    public function Usersdetail()
+    {
+        return $this->hasOne('App\Models\Users_detail','uid');
+    }
+    // 一对多  一个用户有多个文章
+    public function Userarticles()
+    {
+        return $this->hasMany('App\Models\Article','uid');
+    }
+    // 一对多  一个用户有多个相册
+    public function Useralbums()
+    {
+        return $this->hasMany('App\Models\Album','uid');
+    }
+     // 多对多  用户收藏多个文章
+    public function Usersshoucang()
+    {
+        return $this->belongsToMany('App\Models\Article','user_d_art','uid','aid');
+    }
 
-    /**
-     * The attributes excluded from the model's JSON form.
-     *
-     * @var array
-     */
-    protected $hidden = ['password', 'remember_token'];
 }

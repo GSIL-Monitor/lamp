@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Admin_user;
 use App\Http\Requests\UserStoreRequest;
 use App\Http\Requests\EditStoreRequest;
+
 class UserController extends Controller
 {
     /**
@@ -118,4 +119,6 @@ class UserController extends Controller
             return back()->with('error','删除失败');
         }
     }
+
+ 
 }

@@ -6,7 +6,7 @@
 
 <div class="mws-panel grid_8">
     <div class="mws-panel-header">
-        <span><i class="icon-table"></i>图片列表</span>
+        <span><i class="icon-table"></i>轮播图片列表</span>
     </div>
   <div class="mws-panel-body no-padding">
     <div id="DataTables_Table_1_wrapper" class="dataTables_wrapper" role="grid">
@@ -26,7 +26,7 @@
         <tr role="row">
           <th>ID</th>
           <th>图 片</th>
-          <th>路 径</th>
+          <th>描 述</th>
           <th>操 作</th>
         </tr>
       </thead>
@@ -34,8 +34,10 @@
         @foreach($data as $k=>$v)
         <tr class="odd">
             <td>{{ $v -> id }}</td>
-            <td><img src="{{ $v['profile'] }}" width="100px"></td>
-            <td >{{ $v -> profile }}</td>
+            <td><img src="{{ $v['profile'] }}" width="200px"></td>
+            <td style="width:190px;text-overflow: ellipsis;overflow:hidden;white-space:nowrap;">
+              {{ $v -> describe }}
+            </td>
             <td>
                 @if ( $v -> status == 1 )
                   <a href="/admin/slid/{{ $v->id }}/up" class="btn btn-success">显示</a>
