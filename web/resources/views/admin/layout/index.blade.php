@@ -28,11 +28,21 @@
 <!-- jQuery-UI Stylesheet -->
 <link rel="stylesheet" type="text/css" href="/admin/jui/css/jquery.ui.all.css" media="screen">
 <link rel="stylesheet" type="text/css" href="/admin/jui/jquery-ui.custom.css" media="screen">
-
+<link rel="stylesheet" type="text/css" href="/admin/bootstrap/css/bootstrap.min.css">
 <!-- Theme Stylesheet -->
 <link rel="stylesheet" type="text/css" href="/admin/css/mws-theme.css" media="screen">
 <link rel="stylesheet" type="text/css" href="/admin/css/themer.css" media="screen">
 <link rel="stylesheet" type="text/css" href="/admin/css/page_page.css">
+
+<!-- 图片上传 -->
+<link rel="stylesheet" type="text/css" href="/admin2/css/webuploader.css" />
+<link rel="stylesheet" type="text/css" href="/admin2/css/style.css" />
+<script src="/admin2/js/jquery-1.9.min.js"></script>
+<script src="/admin2/js/webuploader.js"></script>
+<script src="/admin2/js/jquery.sortable.js"></script>
+<script src="/admin2/js/upload.js"></script>
+
+
 
 <title>MWS Admin - Dashboard</title>
 
@@ -52,7 +62,7 @@
         
         	<!-- Logo Wrapper, images put within this wrapper will always be vertically centered -->
         	<div id="mws-logo-wrap">
-            	<img src="/admin/images/mws-logo.png" alt="mws admin">
+            	<img src="/admin/images/mws-logo4.png" alt="mws admin">
 			</div>
         </div>
         
@@ -231,7 +241,6 @@
                         <a href="#"><i class="icon-list"></i>管理员</a>
                         <ul>
                             <li><a href="/admin/user">管理员列表</a></li>
-                            <li><a href="/admin/user/index">管理员列表</a></li>
                             <li><a href="/admin/user/create">添加管理员</a></li>
                         </ul>
                     </li>    
@@ -280,6 +289,16 @@
                         </ul>
                     </li>    
                 </ul>
+                <ul>     
+                    <li>
+                        <a href="#"><i class="icon-list"></i>类别管理</a>
+                        <ul>
+                            <li><a href="/admin/cate">分类列表</a></li>
+                            <li><a href="/admin/cate/create">分类添加</a></li> 
+                            <li><a href="/admin/cate/create">回收站</a></li>
+                        </ul>
+                    </li>    
+                </ul>
                  <ul>     
                     <li>
                         <a href="#"><i class="icon-tools"></i>网站基础设置</a>
@@ -294,6 +313,35 @@
                         <a href="#"><i class="icon-list"></i>热门话题</a>
                         <ul>
                             <li><a href="form_layouts.html">管理话题</a></li>
+                        </ul>
+                    </li>    
+                </ul>
+                <ul>     
+                    <li>
+                        <a href="#"><i class="icon-list"></i>前台信息</a>
+                        <ul>
+                            <li><a href="form_layouts.html">添加美食</a></li>
+                            <li><a href="form_layouts.html">美食列表</a></li>
+                            <li><a href="form_layouts.html">娱乐推荐</a></li>
+                            <li><a href="form_layouts.html">娱乐列表</a></li>
+                        </ul>
+                    </li>    
+                </ul>
+                 <ul>     
+                    <li>
+                        <a href="#"><i class="icon-list"></i>侧栏小广告管理</a>
+                        <ul>
+                            <li><a href="/admin/job">广告列表</a></li>
+                            <li><a href="/admin/job/create">添加广告</a></li>
+                        </ul>
+                    </li>    
+                </ul>
+                <ul>     
+                    <li>
+                        <a href="#"><i class="icon-list"></i>旅行口碑榜管理</a>
+                        <ul>
+                            <li><a href="/admin/strategy">管理口碑列表</a></li>
+                            <li><a href="/admin/strategy/create">添加最佳口碑榜</a></li>
                         </ul>
                     </li>    
                 </ul>

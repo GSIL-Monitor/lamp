@@ -1,0 +1,14 @@
+.t_body {
+    min-width: 320px;
+    max-width: 640px;
+    color: rgb(0, 0, 0);
+    font: 12px 微软雅黑, Arial;
+    background: rgb(239, 239, 244);
+}
+
+.header {
+    background: #393a3e;
+    color: #f5f7f6;
+    height: auto;
+    overflow: hidden;
+}

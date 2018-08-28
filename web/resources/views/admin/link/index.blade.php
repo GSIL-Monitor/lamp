@@ -14,6 +14,7 @@
             <div id="DataTables_Table_1_length" class="dataTables_length">
 
                 <form action="/admin/link" method="get">
+                    
                     <label>显示
                         <select size="1" name="count" aria-controls="DataTables_Table_1">
                           <option value="5"   @if ( !empty( $request['count'] )  &&  isset( $request['count'] ) &&  $request['count'] == 5 )) selected  @endif >5</option>
@@ -52,7 +53,7 @@
                             </th>
                         </tr>
                     </thead>
-                    <tbody align="center">
+                    <tbody align="center" role="alert" aria-live="polite" aria-relevant="all">
                         @foreach ($data as $k => $v)
                         <tr>
                             <td>{{ $v->lid }}</td>
@@ -63,7 +64,7 @@
                                 @if ( $v -> status == 1 )
                                     <a class="btn btn-info" href="/admin/link/{{ $v->lid }}/eav" onclick="return confirm('是否确认审核')">待审核</a>
                                 @else
-                                    <a class="btn btn-success" href="">审核已通过</a>
+                                    <a class="btn btn-success" href="javascript:;">审核已通过</a>
                                 @endif
                             </td>
                             <td class="">
@@ -71,7 +72,7 @@
                                 <form action="/admin/link/{{ $v->lid }}" method="post" style="display:inline;">
                                     {{ csrf_field() }}
                                     {{ method_field('DELETE') }}
-                                  <input type="submit" class="btn btn-warning" value="删除">
+                                  <input type="submit" class="btn btn-warning" value="删除" onclick="return confirm('是否确认删除')">
                                 </form>
                             </td>
                         </tr>

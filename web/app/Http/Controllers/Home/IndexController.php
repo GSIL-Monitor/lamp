@@ -9,6 +9,8 @@ use App\Http\Controllers\Controller;
 use App\Models\Link;
 use App\Models\Slid;
 
+
+
 class IndexController extends Controller
 {
     /**
@@ -18,11 +20,11 @@ class IndexController extends Controller
      */
     public function index()
     {
-        //查询友情链接所有状态为2(已审核)的数据
-        $link = Link::where('status','=',2)->get();
-        $slid = Slid::where('status','=',2) -> get();
+        
+        $slid = Slid::where('status','=',2)->get();
         //加载模板
-        return view('home.index.index',['link'=>$link,'slid'=>$slid]);
+        return view('home.index.index',['slid' => $slid]);
+
     }
 
     /**

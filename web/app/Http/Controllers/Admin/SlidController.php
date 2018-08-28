@@ -16,18 +16,13 @@ class SlidController extends Controller
      */
     public function index(Request $request)
     {   
-        // echo 'hello';
-        // exit;
+
         $search = $request -> input('search','');
 
         $data = Slid::where('id','like','%'.$search.'%') -> paginate(5);
 
         return view('admin.slid.index',['data'=>$data,'request'=>$request->all()]);
-        //获取数据
-        // $data = Slid::all();
-        // dump($data);
-        //加载模板
-        return view('admin.slid.index',['data' => $data]);
+        
     }
 
     /**

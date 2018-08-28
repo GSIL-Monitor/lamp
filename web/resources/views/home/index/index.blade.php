@@ -14,16 +14,16 @@
         </li>
          @endforeach
        
-        
       </ul>
       <ul class="flex-direction-nav">
         <li><a class="flex-prev" href="javascript:;">Previous</a></li>
         <li><a class="flex-next" href="javascript:;">Next</a></li>
       </ul>
       <ol id="bannerCtrl" class="flex-control-nav flex-control-paging">
-        <li><a>1</a></li>
-        <li><a>2</a></li>
-        <li><a>2</a></li>
+       @foreach($slid as $k=>$v)
+        <li><a></a></li>
+        @endforeach
+
       </ol>
       </div>
      
@@ -106,6 +106,12 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="line">
+                  <h1>
+            <a href="#"><img src="img/2.jpg">
+            <p></p>
+            <span>01&nbsp;冬季出行必备十大条件</span>
+            </a>
+          </h1>
                   <h1>姓名：张先生</h1>
                   <h2>预定线路：你走进大山深处，探索最神秘的大山遗迹</h2>
                   <h3>预定时间：2017-12-28</h3>
@@ -856,28 +862,19 @@
       </div>
     </div>
     <!--云南游记-->
-    <!--预定提交-->
+ <!--预定提交-->
     <div class="ydbg">
       <div class="container">
         <div class="ydtxt">
-          <h1>让旅行变得如此简单！</h1>
-          <h2>
-              <span>100%</span>满意&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <span>99%</span>好评&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <span>78%</span>好评&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <span>95%</span>好评
-          </h2>
+          <br><br><br>
+          <h1>让旅行变得如此简单！</h1><br><br><br><br><br>
+          <h1>人生就是一次充满未知的旅行!</h1>
+          
         </div>
         <div class="mzcxbtn">
-          <form>
-            <input class="input" style="width: 300px;" type="text" name="目的地" placeholder="输入目的地城市" />
-            <input class="input" style="width: 130px;" type="text" name="姓" placeholder="姓名/称呼" />
-            <input class="input" type="text" name="手机号" placeholder="请输入手机号码" />
-            <a href="javascript:void(0);" onClick="winpop();">立即预定</a>
-          </form>
+          
         </div>
       </div>
     </div>
     <!--预定提交 end-->
-   
 @endsection

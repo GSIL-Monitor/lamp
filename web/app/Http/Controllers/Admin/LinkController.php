@@ -14,9 +14,9 @@ use DB;
 class LinkController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * 后台友情链接列表页
      *
-     * @return \Illuminate\Http\Response
+     * 
      */
     public function index(Request $request)
     {
@@ -30,9 +30,9 @@ class LinkController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * 加载友情链接添加列表页
      *
-     * @return \Illuminate\Http\Response
+     *
      */
     public function create()
     {
@@ -41,10 +41,10 @@ class LinkController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * 存储友情连接列表页提交的信息到数据库
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * LinkStoreRequest 判断添加友情链接规则
+     * 
      */
     public function store(LinkStoreRequest $request)
     {
@@ -60,10 +60,10 @@ class LinkController extends Controller
         //判断是否存储成功处理
         if ( $res ) {
             DB::commit();   //事务提交
-            return redirect('admin/link') -> with('success','添加成功');
+            return redirect('admin/link') -> with('success','添加友情链接成功');
         } else {
             DB::rollBock(); //回滚事务
-            return back() -> with('error','添加失败');
+            return back() -> with('error','添加友情链接失败');
         }
         
      }
@@ -80,10 +80,10 @@ class LinkController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * 加载友情链接修改页
      *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * $id 获取指定友情链接ID信息 加载到页面
+     * 
      */
     public function edit(Request $request , $id)
     {
@@ -92,11 +92,10 @@ class LinkController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * 存储友情链接修改的信息到数据库
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * $id 指定友情链接修改ID
+     * 
      */
     public function update(Request $request , $id)
     {  
@@ -114,19 +113,19 @@ class LinkController extends Controller
         //判断是否修改成功处理
         if ( $res ) {
             DB::commit();   //事务提交
-            return redirect('admin/link') -> with('success','修改成功');
+            return redirect('admin/link') -> with('success','修改友情链接成功');
         } else {
             DB::rollBock(); //回滚事务
-            return back() -> with('error','修改失败');
+            return back() -> with('error','修改友情链接失败');
         }
 
     }
 
     /**
-     * Remove the specified resource from storage.
+     * 删除友情链接信息
      *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * $id 指定友情链接删除ID
+     * 
      */
     public function destroy($id)
     {
@@ -138,18 +137,18 @@ class LinkController extends Controller
         //判断是否删除成功
         if ( $res ) {
             DB::commit();   //事务提交
-            return redirect('admin/link') -> with('success','删除成功');
+            return redirect('admin/link') -> with('success','删除友情链接成功');
         } else {
             DB::rollBock(); //回滚事务
-            return back() -> with('error','删除失败');
+            return back() -> with('error','删除友情链接失败');
         }
     }
 
     /**
-     * Display the specified resource.
+     * 修改友情链接状态操作 1为未审核 2为已审核，审核状态可以显示
      *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * $id 指定删除友情链接ID
+     * 
      */
     public function eav($id)
     {
@@ -164,10 +163,10 @@ class LinkController extends Controller
         //判断是否修改成功处理
         if ( $res ) {
             DB::commit();   //事务提交
-            return back() -> with('success','审核成功');
+            return back() -> with('success','审核友情链接成功');
         } else {
             DB::rollBock(); //回滚事务
-            return back() -> with('error','审核失败');
+            return back() -> with('error','审核友情链接失败');
         }
     }
 }
