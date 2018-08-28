@@ -242,7 +242,7 @@
                   </li>
                   <li>
                     <a href="#">
-                      <h1><img src="img/food03.jpg"/></h1>
+                      <h1><img src="img/food02.jpg"/></h1>
                       <h2>美食名称</h2>
                     </a>
                     <h3>Top3</h3>
@@ -252,21 +252,21 @@
                       <h1><img src="img/food03.jpg"/></h1>
                       <h2>美食名称</h2>
                     </a>
-                    <h3>Top1</h3>
+                    <h3>Top4</h3>
                   </li>
                   <li>
                     <a href="#">
                       <h1><img src="img/food02.jpg"/></h1>
                       <h2>美食名称</h2>
                     </a>
-                    <h3>Top2</h3>
+                    <h3>Top5</h3>
                   </li>
                   <li>
                     <a href="#">
                       <h1><img src="img/food01.jpg"/></h1>
                       <h2>美食名称</h2>
                     </a>
-                    <h3>Top3</h3>
+                    <h3>Top6</h3>
                   </li>
                 </ul>
               </div>
@@ -286,7 +286,7 @@
               <div class="card-content content-first" style="background: f9f9f9;">
                 <ul>
                   <li>
-                    <h1><img src="img/food02. jpg"/></h1>
+                    <h1><img src="img/food02.jpg"/></h1>
                     <h2>美食名称</h2>
                     <p>云南美食之过桥米线云南特色美食当然首推是过桥米线了，过桥米线是云南特色的风味小吃。现如今，过桥米线已经在大江南北开了连锁店。 过桥米线的主要原料就是汤、 肉片、米线以及其他作料。这汤是用肥鸡、
                     </p>

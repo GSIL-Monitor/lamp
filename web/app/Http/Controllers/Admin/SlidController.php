@@ -19,12 +19,9 @@ class SlidController extends Controller
 
         $search = $request -> input('search','');
 
-        $data = Slid::where('id','like','%'.$search.'%') -> paginate(5);
+        $data = Slid::where('id','like','%'.$search.'%') -> paginate(10);
 
         return view('admin.slid.index',['data'=>$data,'request'=>$request->all()]);
-        //获取数据
-        // $data = Slid::all();
-        // dump($data);
         //加载模板
         return view('admin.slid.index',['data' => $data]);
     }

@@ -187,7 +187,6 @@
                     </div>
                 </div>
             </div>
-            
             <!-- User Information and functions section -->
             <div id="mws-user-info" class="mws-inset">
             
@@ -225,17 +224,9 @@
                 <span></span>
                 <span></span>
             </div>
-            
         	<!-- Searchbox -->
-        	<div id="mws-searchbox" class="mws-inset">
-            	<form action="typography.html">
-                	<input type="text" class="mws-search-input" placeholder="Search...">
-                    <button type="submit" class="mws-search-submit"><i class="icon-search"></i></button>
-                </form>
-            </div>
-            
             <!-- Main Navigation -->
-            <div id="mws-navigation">
+            <div id="mws-navigation"> 
                 <ul>     
                     <li>
                         <a href="#"><i class="icon-list"></i>管理员</a>
@@ -289,16 +280,7 @@
                         </ul>
                     </li>    
                 </ul>
-                <ul>     
-                    <li>
-                        <a href="#"><i class="icon-list"></i>类别管理</a>
-                        <ul>
-                            <li><a href="/admin/cate">分类列表</a></li>
-                            <li><a href="/admin/cate/create">分类添加</a></li> 
-                            <li><a href="/admin/cate/create">回收站</a></li>
-                        </ul>
-                    </li>    
-                </ul>
+                
                  <ul>     
                     <li>
                         <a href="#"><i class="icon-tools"></i>网站基础设置</a>
@@ -313,6 +295,23 @@
                         <a href="#"><i class="icon-list"></i>热门话题</a>
                         <ul>
                             <li><a href="form_layouts.html">管理话题</a></li>
+                        </ul>
+                    </li>    
+                </ul>
+                <ul>     
+                    <li>
+                        <a href="#"><i class="icon-list"></i>前台信息</a>
+                        <ul>
+                            <li><a href="/admin/food/create">添加美食</a></li>
+                            <li><a href="/admin/food">美食列表</a></li>
+                            <li><a href="/admin/play/create">添加娱乐</a></li>
+                            <li><a href="/admin/play">娱乐列表</a></li>
+                            <li><a href="/admin/scenery/create">添加热门景点</a></li>
+                            <li><a href="/admin/scenery">热门景点列表</a></li>
+                            <li><a href="/admin/strategy/create">添加城市攻略</a></li>
+                            <li><a href="/admin/strategy">城市攻略列表</a></li>
+                            <li><a href="/admin/travel/create">添加主题游</a></li>
+                            <li><a href="/admin/travel">主题游列表</a></li>
                         </ul>
                     </li>    
                 </ul>

@@ -21,7 +21,7 @@ class UserController extends Controller
         //获取数据
         $search = $request -> input('search','');//搜索关键词
         $count = $request -> input('count',5);//每页显示条数
-        $data = Admin_user::where('nickname','like','%'.$search.'%') -> paginate($count);
+        $data = Admin_user::where('nickname','like','%'.$search.'%') ->  orderBy('id') -> paginate($count);
         return view('admin.user.index',['data'=>$data,'request'=>$request->all()]);
     }
 
@@ -90,7 +90,7 @@ class UserController extends Controller
      */
     public function update(EditStoreRequest $request, $id)
     {
-         $users = Admin_user::find($id);
+        $users = Admin_user::find($id);
         $users -> nickname = $request -> input('nickname');
         $users -> tel = $request -> input('tel');
         $users -> power = $request -> input('power');

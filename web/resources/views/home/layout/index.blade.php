@@ -3,7 +3,7 @@
 
   <head>
     <meta http-equiv="Content-Type" content="text/html; chaRset=utf-8" />
-    <title>辣郊游旅游网-首页</title>
+    <title>第七城市</title>
     <!--jquery-->
     <script src="/home/js/jquery-1.10.2.min.js"></script>
     <!-- <script src="/home/js/jquery-1.6.4.min.js"></script> -->
@@ -15,6 +15,7 @@
     <!--felizon-->
     <link rel="stylesheet" href="/home/css/felizon_pc.css" />
     <link rel="stylesheet" href="/home/css/style.css" />
+    <link rel="stylesheet" href="/home/css/style3.css" />
     <link rel="stylesheet" href="/home/css/member.css" />
     <link rel="stylesheet" type="text/css" href="/home/css/headerfoot_black.min-2b9fe8cff370bc02d93e68713767796c.css">
     <!--youji-->
@@ -138,8 +139,8 @@
           <a href="#"></a>
           <a href="#"></a>
           <a href="#"></a>
-          <a href="login.html">登陆</a>|
-          <a href="register.html">立即注册</a>
+          <a href="/home/login">登陆</a>|
+          <a href="/home/register">注册</a>
         </div>
       </div>
     </div>
@@ -148,25 +149,26 @@
     <div class="header">
       <div class="container2">
         <div class="logo">
-          <a href="index.html"><img style="height: 50px;width: 220px" src="img/logo1.png" /></a>
+          <a href="/home/index"><img style="height: 50px;width: 220px" src="/home/img/logo1.png" /></a>
         </div>
         <div class="nav">
           <ul>
             <li>
-              <a href="index.html">首页</a>
+              <a href="/home/index">首页</a>
             </li>
             <li>
-              <a href="line.html">各地美食</a>
+              <a href="/home/food">各地美食</a>
             </li>
             <li>
-              <a href="piece.html">热门景点</a>
+              <a href="/home/scenery">热门景点</a>
             </li>
             <li class="navsub">
-              <a class="navsub_bg" href="made.html">出行锦囊</a>
+              <a class="navsub_bg" href="#">出行锦囊</a>
               <div class="navsub_box">
-                <a href="made.html">娱乐推荐</a>
-                <a href="made.html">精品路线</a>
+                <a href="/home/play">娱乐推荐</a>
+                <a href="/home/strategy">城市攻略</a>
                 <a href="made.html">精品酒店</a>
+                <a href="/home/travel">精品主题游 </a>
               </div>
               <script type="text/javascript">
                 $(function() {
@@ -246,8 +248,6 @@
         <p class="info">2004-2018 ? 第七城市? qyer.com All rights reserved. Version v5.57 京ICP备12003524号 京公网安备11010102001935号 京ICP证140673号
           <a target="_blank" style="color:inherit;" href="//static.qyer.com/images/yyzz.jpg">营业执照</a>
           <a target="_blank" style="color:inherit;" href="//static.qyer.com/images/jyxkz.jpg">经营许可证</a></p>
-
-
         <!--友情链接模块-->
         <!-- 友情链接 -->
         <dl class="qyer_footer_links">

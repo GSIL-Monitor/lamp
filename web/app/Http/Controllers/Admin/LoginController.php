@@ -22,10 +22,11 @@ class LoginController extends Controller
         $names = [];
         foreach ($name as $key => $value) {
             array_push($names,$value->nickname);
+
         }
         $res = in_array($data['nickname'], $names);
         if($res){
-            $passwords = Admin_user::where('nickname','=',$data['nickname'])->first(); 
+            $passwords = Admin_user::where('nickname','=',$data['nickname'])->first();
         }else{
             return back()->with('error','用户名错误');
         }
